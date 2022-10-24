@@ -3,7 +3,7 @@
 --
 
 CREATE TABLE Matériaux (
-    ID_Matériaux INT, 
+    ID_Matériaux uuid not null default uuid_generate_v4(), 
     libelle_Matériaux VARCHAR, 
     PRIMARY KEY (ID_Matériaux)
     )
