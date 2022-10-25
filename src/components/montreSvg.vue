@@ -4,7 +4,7 @@
   withDefaults(defineProps<montre>(),{
     bracelet_montre: "red",
     boitier: "red",
-    ecran: "white",
+    ecran_montre: "white",
     boutons_montre: "blue",
    })
 </script>
@@ -135,7 +135,7 @@
     <g>
       <path :fill="boitier" :class="boitier" d="M254.37,573.97c-58.87,0-114.21-22.92-155.83-64.55-41.62-41.62-64.55-96.97-64.55-155.83s22.92-114.21,64.55-155.83c41.62-41.62,96.97-64.55,155.83-64.55s114.21,22.92,155.83,64.55,64.55,96.97,64.55,155.83-22.92,114.21-64.55,155.83-96.97,64.55-155.83,64.55Z"/>
     </g>
-    <circle :fill="ecran" :class="ecran" cx="254.37" cy="353.58" r="194.53"/>
+    <circle :fill="ecran_montre" :class="ecran_montre" cx="254.37" cy="353.58" r="194.53"/>
   </g>
   <g id="ecran">
     <text class="cls-3" transform="translate(119.76 329.78)"><tspan x="0" y="0">1O:1O</tspan></text>
