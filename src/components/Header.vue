@@ -12,17 +12,17 @@ import Logo from "./Logo.vue";
                     <Logo class="w-16 h-16 my-3" />
                 </RouterLink>
           </div>
-          <ul class="flex items-center gap-24 text-lg mx-6" >
-            <li class="my-3 text-blanc">
+          <ul class="flex items-center gap-20 text-xl mx-6 text-blanc font-inter font-bold" >
+            <li class="my-3">
               <RouterLink class="my-6" to="/montre">Nos montres</RouterLink>
             </li>
-            <li class="my-3 text-blanc">
+            <li class="my-3">
               <RouterLink class="my-6" to="/montre/perso">Mes modèles</RouterLink>
             </li>
-            <li class="my-3 text-blanc">
+            <li class="my-3">
               <RouterLink class="my-6" to="/montre/new">Personnalisation</RouterLink>
             </li>
-            <li class="my-3 text-blanc bg-rouge">
+            <li class="my-3  bg-rouge py-2 px-8 rounded-3xl hover:bg-blanc hover:text-noir">
               <RouterLink class="my-6" to="/LoginLogoutView">Se connecter</RouterLink>
             </li>
           </ul>

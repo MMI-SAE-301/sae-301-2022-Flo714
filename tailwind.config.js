@@ -9,7 +9,12 @@ module.exports = {
       'noir':'#000000',
       'rouge': '#E6332A'
     },
-    extend: {}
+
+    extend: {
+      "fontFamily": {
+        "inter": "Inter"
+      }
+    }
   },
   plugins: [
     require("@tailwindcss/typography"),
