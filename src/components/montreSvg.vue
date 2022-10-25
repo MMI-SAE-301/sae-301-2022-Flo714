@@ -3,7 +3,7 @@
 
   withDefaults(defineProps<montre>(),{
     bracelet_montre: "red",
-    boitier_montre: "red",
+    boitier_montre: "green",
     ecran_montre: "white",
     boutons_montre: "blue",
    })

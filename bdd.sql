@@ -21,11 +21,6 @@ CREATE TABLE Montre (
     PRIMARY KEY (ID_Montre)
     )
 
-
-
-
-
-
 --
 -- code pour la création des vues
 --
