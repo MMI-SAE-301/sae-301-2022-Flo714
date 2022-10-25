@@ -27,17 +27,23 @@
             <div class="carousel-item active float-left w-full">
                 <img src="../assets/Carrousel_1.jpg"
                     class="block w-full"
-                    alt="Wild Landscape"/>
+                    alt="Sportifs qui portent une montre"/>
+                <h2 class="absolute top-8 left-16 text-blanc text-5xl font-black">Votre montre, votre monde</h2>
+                <p class="absolute top-36 right-24 text-blanc text-3xl font-bold">Personnalisez votre montre à votre goût</p>
             </div>
             <div class="carousel-item float-left w-full">
                 <img src="../assets/Carrousel_2.jpg"
                     class="block w-full"
-                    alt="Camera"/>
+                    alt="Cylciste qui portent une montre"/>
+                <h2 class="absolute top-8 left-16 text-blanc text-5xl font-black">Explorer les 4 coins du monde</h2>
+                <p class="absolute top-52 left-36 text-blanc text-3xl font-bold">Parcourez les chemins en vélo</p>
             </div>
             <div class="carousel-item float-left w-full">
                 <img src="../assets/Carrousel_3.jpg"
                     class="block w-full"
                     alt="Exotic Fruits"/>
+                <h2 class="absolute top-16 left-16 text-blanc text-5xl font-black">Découvrez les fonctionnalitées</h2>
+                <p class="absolute top-80 left-36 text-blanc text-3xl font-bold">Les diverses fonctionnalitées vous serviront</p>
             </div>
         </div>
         <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
