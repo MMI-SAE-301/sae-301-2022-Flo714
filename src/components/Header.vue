@@ -22,7 +22,7 @@ import Logo from "./Logo.vue";
             <li class="my-3 text-blanc">
               <RouterLink class="my-6" to="/montre/new">Personnalisation</RouterLink>
             </li>
-            <li class="my-3 text-blanc">
+            <li class="my-3 text-blanc bg-rouge">
               <RouterLink class="my-6" to="/LoginLogoutView">Se connecter</RouterLink>
             </li>
           </ul>
