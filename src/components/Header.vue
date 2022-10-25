@@ -6,13 +6,13 @@ import Logo from "./Logo.vue";
 <template>
     <header class=" px-5">
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-blanc"> Passez au contenu </a>
-        <nav class="flex">
-          <div class="flex justify-between items-center">
+        <nav class="flex justify-between">
+          <div class="flex items-center">
                 <RouterLink to="/">
                     <Logo class="w-36" />
                 </RouterLink>
           </div>
-          <ul class="flex  gap-6 text-xl mx-6 py-4" >
+          <ul class="flex items-center gap-24 text-xl mx-6 py-4" >
             <li class="my-3">
               <RouterLink class="my-6" to="/montre">Nos montres</RouterLink>
             </li>
