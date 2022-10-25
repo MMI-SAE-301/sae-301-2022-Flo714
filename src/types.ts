@@ -1,5 +1,5 @@
 export interface montre {
-    bracelet?: string;
+    bracelet_montre?: string;
     boitier?: string;
     ecran?: string;
     boutons?: string;
