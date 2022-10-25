@@ -2,7 +2,7 @@ export interface montre {
     bracelet_montre?: string;
     boitier?: string;
     ecran?: string;
-    boutons?: string;
+    boutons_montre?: string;
   }
   
 export const Colors = {
