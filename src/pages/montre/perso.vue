@@ -4,6 +4,6 @@ import { supabase, user } from '@/supabase';
 </script>
 <template>
   <section v-if="user">
-    <Listemontre class="flex flex-wrap gap-2" :max="3" />
+    <Listemontre class="flex flex-wrap gap-2" />
   </section>
 </template>

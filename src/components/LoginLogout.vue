@@ -14,6 +14,18 @@
  </script>
 <template>
     <div>
+        <div>
+            <button @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
+            Se connecter avec Facebook
+            </button>
+        </div>
+        <div>
+            <button @pointerdown="supabase.auth.signIn({provider: 'google'})">
+            Se connecter avec Google
+            </button>
+        </div>
+    </div>
+    <div>
         <button v-if="user" @pointerdown="supabase.auth.signOut()">
             Se déconnecter ({{ user.email }})
         </button>

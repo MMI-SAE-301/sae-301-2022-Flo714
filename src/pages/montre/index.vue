@@ -2,9 +2,10 @@
 import Listemontre from "@/components/Listemontre.vue";
 import type { montre } from "@/types";
 import { supabase, user } from '@/supabase';
+import MontreSvg from "@/components/montreSvg.vue";
 
 const exemples: montre[]  = [{
-    bracelet_montre: "#FFFF00",
+    bracelet_montre: "#000000",
     boitier_montre: "#FF00FF",
     ecran_montre: "#FFFFFF",
     boutons_montre: "800000"
@@ -29,7 +30,7 @@ const exemples: montre[]  = [{
             params: { data: JSON.stringify(montre) },
           }"
         >
-          <MontreCarre class="w-64" v-bind="montre" />
+          <MontreSvg class="w-64" v-bind="montre" />
         </RouterLink>
       </div>
     </div>
