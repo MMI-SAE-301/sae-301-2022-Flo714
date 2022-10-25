@@ -42,3 +42,9 @@ ON public.montre
 FOR SELECT USING (
   true
 );
+
+CREATE POLICY "Les personnes authentifier peuvent INSERT"
+ON public.montre
+FOR INSERT 
+TO authenticated 
+WITH CHECK (true);
