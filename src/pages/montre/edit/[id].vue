@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import FormSvg from "../../../components/Formmontre.vue";
 defineProps<{
-  id: string;
+  id_montre: string;
 }>();
 </script>
 <template>
-  <FormSvg :id="id" />
+  <FormSvg :id="id_montre" />
 </template>
