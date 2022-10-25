@@ -16,6 +16,9 @@ import Logo from "./Logo.vue";
             <li class="my-3">
               <RouterLink class="my-6" to="/montre/new">Personnalisation</RouterLink>
             </li>
+            <li class="my-3">
+              <RouterLink class="my-6" to="/montre">Nos montres</RouterLink>
+            </li>
           </ul>
         </nav>
       </header>
