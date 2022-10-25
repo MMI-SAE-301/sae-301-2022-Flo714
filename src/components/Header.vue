@@ -22,6 +22,9 @@ import Logo from "./Logo.vue";
             <li class="my-3">
               <RouterLink class="my-6" to="/montre/perso">Mes modèles</RouterLink>
             </li>
+            <li class="my-3">
+              <RouterLink class="my-6" to="/LoginLogoutView">Se connecter</RouterLink>
+            </li>
           </ul>
         </nav>
       </header>
