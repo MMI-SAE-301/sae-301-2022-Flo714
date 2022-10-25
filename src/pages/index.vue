@@ -1,7 +1,16 @@
+<script setup lang="ts">
+import Listemontre from "@/components/Listemontre.vue";
+import { supabase, user } from '@/supabase';
+</script>
 <template>
   <section>
-    <h1 class="text-2xl">
-      Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
-    </h1>
+    <h2>
+      un extrait des chaussures (<RouterLink
+      class="text-red-600 underline"
+      to="/montre"
+      >Toutes les voir</RouterLink
+      >)
+    </h2>
+    <Listemontre class="flex flex-wrap gap-2" :max="3" />
   </section>
 </template>
