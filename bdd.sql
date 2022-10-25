@@ -30,6 +30,9 @@ CREATE TABLE Montre (
 -- code pour la création des vues
 --
 
+CREATE VIEW allMateriaux as
+SELECT *
+FROM "materiaux";
 
 
 
