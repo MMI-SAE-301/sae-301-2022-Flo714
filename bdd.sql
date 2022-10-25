@@ -40,11 +40,11 @@ from "materiaux","montre"
 where"materiaux".id_materiaux = "montre".id_materiaux
 and "materiaux"."libelle_materiaux" = 'Cuir'
 
-CREATE View allPlatine as
+CREATE View allCaoutchouc as
 select "montre"
 from "materiaux","montre"
 where"materiaux".id_materiaux = "montre".id_materiaux
-and "materiaux"."libelle_materiaux" = 'Platine'
+and "materiaux"."libelle_materiaux" = 'Caoutchouc'
 
 CREATE View allCarbone as
 select "montre"
