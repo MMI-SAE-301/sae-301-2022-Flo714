@@ -36,3 +36,9 @@ CREATE TABLE Montre (
 --
 -- code pour la création des policies
 --
+
+CREATE POLICY "Voir toutes les montres"
+ON public.montre
+FOR SELECT USING (
+  true
+);
