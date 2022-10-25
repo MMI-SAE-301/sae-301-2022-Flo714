@@ -3,8 +3,8 @@
 </script>
 
 <template>
- <footer class=" pt-10">
-    <div class="max-w-6xl m-auto text-gray-900 flex flex-wrap justify-left text-lg">
+ <footer class="bg-noir pt-10">
+    <div class="max-w-6xl m-auto text-gray-900 flex flex-wrap justify-left text-lg text-blanc">
 
       <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 
