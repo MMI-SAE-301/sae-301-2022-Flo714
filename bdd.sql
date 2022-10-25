@@ -48,3 +48,11 @@ ON public.montre
 FOR INSERT 
 TO authenticated 
 WITH CHECK (true);
+
+CREATE POLICY "Les gens peuvent modifier"
+ON public.montre
+FOR UPDATE USING(
+    (uid() = id_utilisateurs) AND (commander = false)
+) WITH CHECK (
+    uid() IN ( SELECT montre_1.id_utilisateurs FROM montre montre_1)
+)
