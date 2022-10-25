@@ -4,9 +4,9 @@
 
 <template>
     <footer class="bg-noir py-10">
-        <div class="m-auto text-gray-900 flex flex-wrap justify-left text-lg text-blanc">
+        <div class="ml-24 flex flex-wrap justify-left text-lg text-blanc">
 
-            <div class="p-5 w-2/3 sm:w-4/12 md:w-3/12">
+            <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 
                 <div class="text-xs uppercase text-white font-bold mb-6 border-b-2 border-blanc pb-4 w-1/4">
                     Lien
