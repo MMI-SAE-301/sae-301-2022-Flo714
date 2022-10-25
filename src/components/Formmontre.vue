@@ -1,12 +1,12 @@
 <script setup lang="ts">
-    import type { montre } from "@/types"
+    // import type { montre } from "@/types"
     import { ref } from "vue";
-    import { supabase } from "@/supabase";
+    // import { supabase } from "@/supabase";
     import { useRouter } from "vue-router";
     import montreSvg from "./montreSvg.vue";
     import FormKitListColors from "./FormKitListColors.vue";
 
-    const router = useRouter();
+    // const router = useRouter();
     const montre = ref({});
     // const props = defineProps(["id", "montre"]);
     // if (props.id) {
