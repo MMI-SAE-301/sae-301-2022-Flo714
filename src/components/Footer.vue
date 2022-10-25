@@ -12,9 +12,11 @@
           Lien
         </div>
         <RouterLink class="hover:text-gray-500 font-semibold duration-500" to="/">Accueil</RouterLink>
-        <RouterLink class="text-gris my-3 block  hover:text-gray-100  font-semibold duration-700" to="/montre/new">Personnalisation</RouterLink>
-        <RouterLink class="text-gris my-3 block  hover:text-gray-100   font-semibold duration-700" to="/montre">Nos montres</RouterLink>
-        <RouterLink class="text-gris my-3 block  hover:text-gray-100  font-semibold duration-700" to="/montre/perso">Mes modèles</RouterLink>
+        <RouterLink class="text-gris my-3 block  font-semibold duration-700" to="/montre/new">Personnalisation</RouterLink>
+        <RouterLink class="text-gris my-3 block  font-semibold duration-700" to="/montre">Nos montres</RouterLink>
+        <RouterLink class="text-gris my-3 block  font-semibold duration-400" to="/montre/perso">Mes modèles</RouterLink>
+        <RouterLink class="text-gris my-3 duration-500 bg-rouge py-2 px-8 rounded-3xl hover:bg-blanc hover:text-noir" 
+            to="/montre/perso">Se connecter</RouterLink>
       </div>
 
       <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12 flex flex-col ">
