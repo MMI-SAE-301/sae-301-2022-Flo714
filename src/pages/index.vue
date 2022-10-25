@@ -3,5 +3,11 @@
     <h1 class="text-2xl">
       Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
     </h1>
+    <Carrousel />
   </section>
 </template>
+
+<script type lang="ts">
+import Carrousel from "../components/Carousel.vue"
+import 'tw-elements'
+</script>
