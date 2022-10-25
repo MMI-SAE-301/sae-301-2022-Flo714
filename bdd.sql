@@ -34,6 +34,12 @@ CREATE VIEW allMateriaux as
 SELECT *
 FROM "materiaux";
 
+CREATE View allCuir as
+select "montre"
+from "materiaux","montre"
+where"materiaux".id_materiaux = "montre".id_materiaux
+and "materiaux"."libelle_materiaux" = 'Cuir'
+
 
 
 --
