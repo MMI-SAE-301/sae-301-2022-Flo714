@@ -46,6 +46,12 @@ from "materiaux","montre"
 where"materiaux".id_materiaux = "montre".id_materiaux
 and "materiaux"."libelle_materiaux" = 'Platine'
 
+CREATE View allCarbone as
+select "montre"
+from "materiaux","montre"
+where"materiaux".id_materiaux = "montre".id_materiaux
+and "materiaux"."libelle_materiaux" = 'Carbone'
+
 
 
 --
