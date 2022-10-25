@@ -14,7 +14,7 @@ import Logo from "./Logo.vue";
           </div>
           <ul class="flex  gap-6 text-xl mx-6 py-4" >
             <li class="my-3">
-              <RouterLink class="my-6" to="/montres/new">Personnalisation</RouterLink>
+              <RouterLink class="my-6" to="/montre/new">Personnalisation</RouterLink>
             </li>
           </ul>
         </nav>
