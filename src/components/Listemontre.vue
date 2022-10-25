@@ -15,7 +15,7 @@ if (error) {
 
 <template>
     <ul>
-        <li v-for="montre in montres" :key="montre.montre">
+        <li v-for="montre in montres" :key="montre.id_montre">
         <router-link
             :to="{ name: 'montre-edit-id', params: { id: montre.id } }"
             >
