@@ -53,10 +53,13 @@ and "materiaux"."libelle_materiaux" = 'Carbone'
 -- code pour la création des policies
 --
 
+drop POLICY "Voir toutes les montres"
+ON public.montre;
+
 CREATE POLICY "Voir toutes les montres"
 ON public.montre
 FOR SELECT USING (
-  true
+  (uid() = id_utilisateurs)
 );
 
 CREATE POLICY "Les personnes authentifier peuvent INSERT"
@@ -65,10 +68,14 @@ FOR INSERT
 TO authenticated 
 WITH CHECK (true);
 
+
+-- drop policy "Les gens peuvent modifier" ON public.montre
+
 CREATE POLICY "Les gens peuvent modifier"
 ON public.montre
 FOR UPDATE USING(
-    (uid() = id_utilisateurs) AND (commander = false)
-) WITH CHECK (
-    uid() IN ( SELECT montre_1.id_utilisateurs FROM montre montre_1)
-)
+    (uid() = id_utilisateurs) AND (commander = false))
+-- WITH CHECK (
+--     uid() IN (uid() = id_utilisateurs)
+-- )
+
