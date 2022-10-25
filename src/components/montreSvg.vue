@@ -4,7 +4,7 @@
   withDefaults(defineProps<montre>(),{
     bracelet: "red",
     boitier: "red",
-    ecran: "green",
+    ecran: "white",
     boutons: "blue",
    })
 </script>
