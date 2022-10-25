@@ -24,6 +24,11 @@
           <code class="font-mono">/src/pages/montre</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/montre/perso">
+          Voir mes montres
+        </router-link>
+      </li>
     </ul>
   </nav>
   <!-- Affiche les pages -->

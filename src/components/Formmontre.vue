@@ -7,6 +7,17 @@
 
     const router = useRouter();
     const montre = ref({});
+
+    const { data: listeMateriaux, error } = await supabase
+          .from("materiaux")
+          .select("*");
+        if (error) console.log("n'a pas pu charger la table Matériaux :", error);
+        // Les convertir par map en un tableau d'objets {value, label} pour FormKit
+        const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
+          value: materiaux.id_materiaux,
+          label: materiaux.libelle_materiaux,
+    }));
+
     const props = defineProps(["id", "montre"]);
     if (props.id) {
         // On charge les données de la table Basket
@@ -35,6 +46,7 @@
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre">
             <FormKitListColors name="bracelet_montre" label="bracelet" />
+            <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" />
             <FormKitListColors name="boitier_montre" label="boitier" />
             <FormKitListColors name="ecran_montre" label="ecran" />
             <FormKitListColors name="boutons_montre" label="boutons" />
