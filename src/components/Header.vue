@@ -14,15 +14,15 @@ import Logo from "./Logo.vue";
           </div>
           <ul class="flex items-center text-xl mx-4 text-blanc font-inter font-bold" >
             <li class="my-3">
-              <RouterLink class="my-6 p-12 hover:bg-blanc hover:text-noir" to="/montre">Nos montres</RouterLink>
+              <RouterLink class="my-6 p-12 duration-500 hover:bg-blanc hover:text-noir" to="/montre">Nos montres</RouterLink>
             </li>
             <li class="my-3">
-              <RouterLink class="my-6 p-12 hover:bg-blanc hover:text-noir" to="/montre/perso">Mes modèles</RouterLink>
+              <RouterLink class="my-6 p-12 duration-500 hover:bg-blanc hover:text-noir" to="/montre/perso">Mes modèles</RouterLink>
             </li>
             <li class="my-3">
-              <RouterLink class="my-6 p-12 hover:bg-blanc hover:text-noir" to="/montre/new">Personnalisation</RouterLink>
+              <RouterLink class="my-6 p-12 duration-500 hover:bg-blanc hover:text-noir" to="/montre/new">Personnalisation</RouterLink>
             </li>
-            <li class="my-3 ml-4 bg-rouge py-2 px-8 rounded-3xl hover:bg-blanc hover:text-noir">
+            <li class="my-3 ml-4 bg-rouge py-2 px-8 rounded-3xl duration-500 hover:bg-blanc hover:text-noir">
               <RouterLink class="my-6" to="/LoginLogoutView">Se connecter</RouterLink>
             </li>
           </ul>
