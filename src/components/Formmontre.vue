@@ -18,13 +18,13 @@
           label: materiaux.libelle_materiaux,
     }));
 
-    const props = defineProps(["id", "montre"]);
-    if (props.id) {
+    const props = defineProps(["id_montre", "montre"]);
+    if (props.id_montre) {
         // On charge les données de la table Basket
         let { data, error } = await supabase
         .from("montre")
         .select("*")
-        .eq("id", props.id);
+        .eq("id_montre", props.id_montre);
         if (error || !data)
         console.log("n'a pas pu charger la table montre :", error);
         else montre.value = data[0];
