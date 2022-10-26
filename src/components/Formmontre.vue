@@ -10,9 +10,11 @@
       RadioGroupDescription,
       RadioGroupOption,
     } from '@headlessui/vue'
+    import { Switch } from '@headlessui/vue'
 
     const router = useRouter();
     const montre = ref({});
+    const enabled = ref(false)
 
     const { data: listeMateriaux, error } = await supabase
           .from("materiaux")
@@ -48,7 +50,7 @@
 </script>  
 
 <template>
-    <div class="p-2 my-24 flex justify-center gap-40">
+    <div class="p-2 my-24 flex justify-center gap-56">
         <div class="w-1/5">
             <montreSvg class="" v-bind="montre"/>
         </div>
@@ -97,7 +99,18 @@
                 </RadioGroup>
             </div>
             <div class="flex">
-                <FormKit name="commander" label="Commander" type="checkbox" classe=""/>
+                <p class="font-bold text-3xl my-8">Commander</p>
+                <Switch
+                     v-model="montre.commander"
+                     :class="montre ? 'bg-blanc' : 'bg-noir'"
+                     class="relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-100">               
+                     <span class="sr-only">Use setting</span>
+                     <span
+                       aria-hidden="true"
+                       :class="montre.commander ? 'translate-x-9' : 'translate-x-0'"
+                       class="pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-blanc shadow-lg ring-0 transition duration-300 ease-in-out"
+                     />
+    </Switch>
             </div>
 
         </FormKit>
