@@ -1,5 +1,4 @@
 <script type lang="ts">
-//import Carrousel from "../components/Carousel.vue";
 // import Listemontre from "@/components/Listemontre.vue";
 import type { montre } from "@/types";
 import MontreSvg from "../components/montreSvg.vue";
