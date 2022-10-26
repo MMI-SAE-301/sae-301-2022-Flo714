@@ -3,7 +3,7 @@
             <Carrousel />
         </div>
         <div>
-        <div class="flex justify-around my-24 mx-36">
+        <div class="flex justify-around my-40 mx-36">
             <div class="box-border border-2 border-gris w-[22vw] h-[60vh] pt-11 pl-14 shadow-ombre" v-for="montre in exemples">
                 <div
                     :to="{
