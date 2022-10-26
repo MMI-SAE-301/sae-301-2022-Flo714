@@ -60,7 +60,8 @@
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
             <div class="font-bold text-3xl my-8">
-                <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" ><Choixmat /></FormKit>
+                <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" ></FormKit>
+                <Choixmat />
             </div>
             <div >
                 <FormKit name="commander" label="Commander" type="checkbox" />
