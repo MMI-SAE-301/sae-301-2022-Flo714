@@ -23,10 +23,10 @@ import LoginFacebook from "./LoginFacebook.vue";
             <LoginFacebook />
         </div>
         <div>
-            <button @pointerdown="supabase.auth.signIn({provider: 'google'})">
+            <button class="flex items-center gap-6 bg-rouge px-6 py-4 rounded-lg font-inter font-bold text-xl hover:bg-noir hover:text-blanc duration-300" @pointerdown="supabase.auth.signIn({provider: 'google'})"><LoginGoogle />
             Se connecter avec Google
             </button>
-            <LoginGoogle />
+            
         </div>
     </div>
     <div class="bg-blanc font-inter font-bold text-noir">
