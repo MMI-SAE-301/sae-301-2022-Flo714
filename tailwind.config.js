@@ -17,7 +17,7 @@ module.exports = {
         "inter": "Inter"
       },
       boxShadow: {
-        'shadow': '0 0 9px 4px',
+        'ombre': '0 35px 35px rgba(217, 217, 217, 1)',
       }
     }
   },
