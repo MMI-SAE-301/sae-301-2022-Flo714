@@ -25,11 +25,11 @@
             </button>
         </div>
     </div>
-    <div class="bg-blanc font-inter font-black text-noir">
+    <div class="bg-blanc font-inter font-bold text-noir">
         <div class="container mx-auto p-8">
-            <div class="max-w-xl w-full mx-auto">
-                <div class="bg-white rounded-lg shadow-2xl ">
-                    <div class="p-8 border-2 flex justify-center">
+            <div class="max-w-lg w-full mx-auto">
+                <div class="bg-white rounded-lg shadow-2xl">
+                    <div class="p-8 flex justify-center">
                         <button v-if="user" @pointerdown="supabase.auth.signOut()">
                          Se déconnecter ({{ user.email }})
                         </button>
@@ -47,9 +47,9 @@
                             name="nvlUtilisateur"
                             type="checkbox"
                             v-model="nvlUtilisateur"
-                            class="w-full p-3 mt-4 text-blanc rounded shadow"
+                            class=" p-3 mt-4 text-blanc flex jus"
                             />
-                    </FormKit>
+                        </FormKit>
                     </div>
                 </div>
             </div>

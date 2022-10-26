@@ -20,7 +20,7 @@ module.exports = {
         'ombre': '0 35px 35px rgba(217, 217, 217, 1)',
       },
       "fontWeight": {
-        'bold': '700',
+        'bolds': '700',
       }
     }
   },
