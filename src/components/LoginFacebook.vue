@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Facebook class="w-14"/>
+        <Facebook class="w-16"/>
     </div>
 </template>
 
