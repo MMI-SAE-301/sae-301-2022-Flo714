@@ -3,7 +3,6 @@
     import { supabase } from "@/supabase";
     import { useRouter } from "vue-router";
     import montreSvg from "./montreSvg.vue";
-    import Choixmat from "./Choixmat.vue";
     import FormKitListColors from "./FormKitListColors.vue";
     import {
       RadioGroup,
