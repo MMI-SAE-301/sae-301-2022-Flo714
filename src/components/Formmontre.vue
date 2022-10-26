@@ -42,7 +42,7 @@
         if (error) node.setErrors([error.message]);
         else {
             node.setErrors([]);
-            router.push({ name: "montre-edit-id", params: { id: data[0].id_montre } });
+            router.push({ name: "montre-perso", params: { id: data[0].id_montre } });
         }
     }
 
