@@ -4,7 +4,7 @@
         </div>
         <div>
         <div class="flex justify-around my-24 ">
-            <div class="box-border border-2 border-gris w-72 h-96 pt-6 pl-8" v-for="montre in exemples">
+            <div class="box-border border-2 border-gris w-72 h-96 pt-6 pl-8 shadow-shadow" v-for="montre in exemples">
                 <div
                     :to="{
                       name: 'montre-exemple-data',
