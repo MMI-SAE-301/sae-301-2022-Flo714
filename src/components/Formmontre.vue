@@ -101,12 +101,12 @@
             <div class="flex items-center gap-12">
                 <Switch
                      v-model="montre.commander"
-                     :class="montre.commander ? 'bg-blanc' : 'bg-noir'"
+                     :class="montre.commander ? 'bg-bleu' : 'bg-rouge'"
                      class="relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-noir transition-colors duration-500 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-100">               
                      <span class="sr-only">Use setting</span>
                      <span
                        aria-hidden="true"
-                       :class="montre.commander ? 'translate-x-9 bg-noir' : 'translate-x-0 bg-blanc'"
+                       :class="montre.commander ? 'translate-x-9 bg-blanc' : 'translate-x-0 bg-blanc'"
                        class="pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full shadow-lg transition duration-500 ease-in-out"
                      />
                 </Switch>
