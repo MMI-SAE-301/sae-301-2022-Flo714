@@ -2,6 +2,7 @@
  import { ref } from "@vue/reactivity";
  import LoginGoogle from "./LoginGoogle.vue";
  import { supabase, user } from "../supabase";
+import LoginFacebook from "./LoginFacebook.vue";
  async function signIn(data, node) {
     const { user, error } = await (nvlUtilisateur.value
        ? supabase.auth.signUp(data)
@@ -19,6 +20,7 @@
             <button @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
             Se connecter avec Facebook
             </button>
+            <LoginFacebook />
         </div>
         <div>
             <button @pointerdown="supabase.auth.signIn({provider: 'google'})">

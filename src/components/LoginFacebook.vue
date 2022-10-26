@@ -1,12 +1,12 @@
 <template>
     <div>
-        <Google class="w-12"/>
+        <Facebook class="w-14"/>
     </div>
 </template>
 
 <script setup lang="ts">
 
-import Google from './Google.vue';
+import Facebook from './Facebook.vue';
 
 
 </script>
