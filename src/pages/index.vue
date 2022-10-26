@@ -32,6 +32,21 @@
             <img class="w-[50%] rounded-xl" src="../assets/Sport.jpg" alt="Pratiquer du Sport">
         </div>
     </div>
+    <div class="mx-10 my-72">
+        <div class="flex justify-start -mb-[77vh] ml-10">
+            <img class="w-[50%] rounded-xl" src="../assets/Caoutchouc.jpg" alt="Caoutchouc">
+        </div>
+        <div class="bg-bleu text-blanc mr-10 ml-96 pr-10 rounded-xl pt-10 pb-24">
+            <h2 class="text-3xl pt-10 pb-24 ml-[35vw]">Des matériaux d’exception</h2>
+            <div class="py-10">
+                <p class="text-2xl pl-[50%] pr-5">TiK•TaK utilise des matériaux d’exception comme du cuir, du carbone et du Caoutchouc.</p>
+                <p class="text-2xl pl-[50%] pr-5">Le cuir provient de peau de vache naturelle fabriquée sur mesure.</p>
+                <p class="text-2xl pl-[50%] pr-5">Les montres en carbone sont fabriqué par nos imprimantes 3D. Chaque modèle sera donc fait sur mesure par nos techniciens.</p>
+                <p class="text-2xl pl-[50%] pr-5">Le caoutchouc est fabriquées à partir de latex qui est la résine d'un arbre, l'Hévéa.</p>
+                <p class="text-2xl pl-[50%] pr-5">Ces matériaux composeront vos bracelets de montre à votre guise.</p>
+            </div>
+        </div>
+    </div>
 </template>
   
 <script setup lang="ts">
