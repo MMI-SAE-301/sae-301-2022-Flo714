@@ -28,14 +28,14 @@ const exemples: montre[]  = [{
   <section>
     <h1 class="text-5xl font-extrabold font-inter my-10 mx-16">Nos modèles</h1>
     <div class="grid grid-cols-3 justify-items-center">
-      <div class=" my-20 box-border border-2 border-gris py-11 px-14 shadow-ombre" v-for="montre in exemples">
+      <div class=" my-20" v-for="montre in exemples">
         <div
           :to="{
             name: 'montre-exemple-data',
             params: { data: JSON.stringify(montre) },
           }"
         >
-          <MontreSvg class="w-[100%]" v-bind="montre" />
+          <MontreSvg class="w-[100%]  box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[110%]" v-bind="montre" />
         </div>
       </div>
     </div>
