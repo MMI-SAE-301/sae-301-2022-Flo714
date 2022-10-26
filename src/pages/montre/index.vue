@@ -35,7 +35,7 @@ const exemples: montre[]  = [{
             params: { data: JSON.stringify(montre) },
           }"
         >
-          <MontreSvg class="w-[100%] box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[110%]" v-bind="montre" />
+          <MontreSvg class="w-[120%] box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[140%]" v-bind="montre" />
         </div>
       </div>
     </div>
