@@ -1,8 +1,8 @@
 <template>
-        <div >
-            <Carrousel />
-        </div>
-        <div>
+    <div >
+        <Carrousel />
+    </div>
+    <div>
         <div class="flex justify-around my-40 mx-36">
             <div class="box-border border-2 border-gris w-[22vw] h-[60vh] pt-11 pl-14 shadow-ombre" v-for="montre in exemples">
                 <div
@@ -14,10 +14,15 @@
                 </div>
             </div>
         </div>
+        <div class="my-3 ml-4 flex justify-center ">
+            <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir" to="/montre/new">
+                <p class="text-4xl font-inter font-bold text-center">Personnaliser<br />
+                     ma montre</p></RouterLink>
+        </div>
     </div>
-  </template>
+</template>
   
-  <script setup lang="ts">
+<script setup lang="ts">
     import Carrousel from '../components/Carrousel.vue';
     import MontreSvg from '../components/montreSvg.vue';
     import type { montre } from "@/types";
