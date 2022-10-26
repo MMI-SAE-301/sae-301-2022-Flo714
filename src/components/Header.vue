@@ -24,7 +24,8 @@ import { supabase, user } from "@/supabase";
               <RouterLink class="my-8 p-14 duration-500 hover:bg-blanc hover:text-noir" to="/montre/new">Personnalisation</RouterLink>
             </li>
             <li class="my-10 ml-4 bg-rouge py-2 px-8 rounded-3xl duration-500 hover:bg-blanc hover:text-noir">
-              <RouterLink class="my-8" to="/LoginLogoutView">Se connecter</RouterLink>
+              <RouterLink v-if="user" class="my-8" to="/LoginLogoutView">Se deconnecter</RouterLink>
+              <RouterLink v-else class="my-8" to="/LoginLogoutView">Se connecter</RouterLink>
             </li>
           </ul>
         </nav>
