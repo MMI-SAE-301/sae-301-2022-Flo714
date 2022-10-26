@@ -1,8 +1,9 @@
 <script type lang="ts">
-import Carrousel from "../components/Carousel.vue";
+//import Carrousel from "../components/Carousel.vue";
 // import Listemontre from "@/components/Listemontre.vue";
 import type { montre } from "@/types";
-import MontreSvg from "@/components/montreSvg.vue";
+import MontreSvg from "../components/montreSvg.vue";
+import Test from "../components/Test.vue";
 
 const exemples: montre[]  = [{
     bracelet_montre: "#000000",
@@ -28,10 +29,10 @@ const exemples: montre[]  = [{
 
 <template>
     <main>
-        <Carrousel />
+        <Test />
         <div>
             <div class="flex flex-wrap gap-2">
-                <div class="w-64" v-for="montre in exemples">
+                <!-- <div class="w-64" v-for="montre in exemples">
                     <RouterLink
                       :to="{
                         name: 'montre-exemple-data',
@@ -39,7 +40,7 @@ const exemples: montre[]  = [{
                       }">
                       <MontreSvg class="w-64" v-bind="montre" />
                     </RouterLink>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
