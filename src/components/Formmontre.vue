@@ -3,6 +3,7 @@
     import { supabase } from "@/supabase";
     import { useRouter } from "vue-router";
     import montreSvg from "./montreSvg.vue";
+    import Choixmat from "./Choixmat.vue";
     import FormKitListColors from "./FormKitListColors.vue";
 
     const router = useRouter();
@@ -37,6 +38,7 @@
             router.push({ name: "montre-edit-id", params: { id: data[0].id_montre } });
         }
     }
+    
 </script>  
 
 <template>
@@ -58,7 +60,7 @@
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
             <div class="font-bold text-3xl my-8">
-                <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" />
+                <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" ><Choixmat /></FormKit>
             </div>
             <div >
                 <FormKit name="commander" label="Commander" type="checkbox" />
