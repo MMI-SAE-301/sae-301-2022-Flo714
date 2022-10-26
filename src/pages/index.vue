@@ -3,15 +3,15 @@
             <Carrousel />
         </div>
         <div>
-        <div class="flex flex-wrap gap-2">
-            <div class="w-64" v-for="montre in exemples">
-                <RouterLink
+        <div class="flex justify-around my-24 ">
+            <div class="box-border border-2 border-gris w-72 h-96 pt-6 pl-8" v-for="montre in exemples">
+                <div
                     :to="{
                       name: 'montre-exemple-data',
                       params: { data: JSON.stringify(montre) },
                     }">
-                    <MontreSvg class="w-64" v-bind="montre" />
-                </RouterLink>
+                    <MontreSvg class="w-56" v-bind="montre" />
+                </div>
             </div>
         </div>
     </div>
