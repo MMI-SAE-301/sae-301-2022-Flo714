@@ -26,9 +26,9 @@ const exemples: montre[]  = [{
 </script>
 <template>
   <section>
-    <h1 class="text-2xl">Exemples de Montres</h1>
+    <h1 class="text-5xl font-extrabold font-inter my-10 mx-16">Nos modèles</h1>
     <div class="flex flex-wrap gap-2">
-      <div class="w-64" v-for="montre in exemples">
+      <div class="w-64 my-20" v-for="montre in exemples">
         <div
           :to="{
             name: 'montre-exemple-data',
