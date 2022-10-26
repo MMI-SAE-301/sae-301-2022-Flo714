@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Listemontre from "@/components/Listemontre.vue";
 import type { montre } from "@/types";
 import { supabase, user } from '@/supabase';
 import MontreSvg from "@/components/montreSvg.vue";
@@ -8,19 +7,19 @@ const exemples: montre[]  = [{
     bracelet_montre: "#000000",
     boitier_montre: "#FF00FF",
     ecran_montre: "#FFFFFF",
-    boutons_montre: "800000"
+    boutons_montre: "#800000"
 },
 {
      bracelet_montre: "#0c4039",
      boitier_montre: "#FFFF00",
      ecran_montre: "#FFFFFF",
-     boutons_montre: "800000"
+     boutons_montre: "#800000"
 },
 {
      bracelet_montre: "#0037A3",
      boitier_montre: "#EFFF37",
      ecran_montre: "#FFFFFF",
-     boutons_montre: "0037A3",
+     boutons_montre: "#0037A3",
 },
 ];
 
