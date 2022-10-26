@@ -2,7 +2,7 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", './node_modules/tw-elements/dist/js/**/*.js'],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     colors: {
       'blanc':'#ffffff',
@@ -22,6 +22,5 @@ module.exports = {
     require("@tailwindcss/forms"),
     formKitTailwind,
     require("@headlessui/tailwindcss"),
-    require('tw-elements/dist/plugin')
   ],
 };

@@ -17,7 +17,6 @@
     "@heroicons/vue": "^2.0.8",
     "@supabase/supabase-js": "^1.35.7",
     "@tailwindcss/typography": "^0.5.7",
-    "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
   },
