@@ -10,7 +10,7 @@
                       name: 'montre-exemple-data',
                       params: { data: JSON.stringify(montre) },
                     }">
-                    <MontreSvg class="w-[110%] box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[130%]" v-bind="montre" />
+                    <MontreSvg class="w-[110%] box-border border-none border-gris py-11 px-14 shadow-ombre hover:w-[130%]" v-bind="montre" />
                 </div>
             </div>
         </div>
