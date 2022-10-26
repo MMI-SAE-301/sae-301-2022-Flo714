@@ -59,7 +59,7 @@
             <div class="font-bold text-3xl my-8">
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
-            <div class="font-bold text-3xl my-8">
+            <div class="font-bold text-3xl">
                 <Choixmat type="select" name="id_materiaux" label="Materiaux du bracelet"/>
             </div>
             <div >
