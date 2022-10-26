@@ -16,31 +16,28 @@ import LoginFacebook from "./LoginFacebook.vue";
  </script>
 <template>
     <div class="bg-blanc font-inter font-bold text-noir">
-        <div class="w-full">
-            <div class="border-2 border-noir border-opacity-40">
-                <div class="p-8 flex justify-center">
-                    <button v-if="user" @pointerdown="supabase.auth.signOut()">
-                     Se déconnecter ({{ user.email }})
-                    </button>
-                    <FormKit
-                         v-else
-                         type="form"
-                         :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
-                         @submit="signIn"
-                         :submit-attrs="{ classes: { input: 'bg-rouge text-blanc px-4 py-2 rounded-lg hover:bg-noir' } }"
-                         >
-                        <FormKit name="email" label="Votre eMail" type="email" label-class="my-6 text-3xl font-bold" class="w-full p-3 rounded bg-blanc border focus:outline-none"/>
-                        <FormKit name="password" label="Mot de passe" type="password" label-class="my-6 text-3xl font-bold" class=" my-10 w-full p-3 rounded bg-blanc border  focus:outline-none"/>
-                        <FormKit
-                        label="S'inscrire"
-                        name="nvlUtilisateur"
-                        type="checkbox"
-                        v-model="nvlUtilisateur"
-                        class=" p-3 mt-4 text-blanc flex jus"
-                        />
-                    </FormKit>
-                </div>
-            </div>
+        <div class="p-8 flex justify-center">
+            <button v-if="user" @pointerdown="supabase.auth.signOut()">
+             Se déconnecter ({{ user.email }})
+            </button>
+            <FormKit
+                 v-else
+                 type="form"
+                 :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
+                 @submit="signIn"
+                 :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir' } }"
+                 class="w-1/3"
+                 >
+                <div class="my-6"><FormKit name="email" label="Votre Email" type="email" label-class=" my-6 text-3xl font-bold" class="bg-blanc border focus:outline-none"/></div>
+                <div class="my-6"><FormKit name="password" label="Mot de passe" type="password" label-class="my-6 text-3xl font-bold" class=" p-3 bg-blanc border  focus:outline-none"/></div>
+                <FormKit
+                    label="S'inscrire"
+                    name="nvlUtilisateur"
+                    type="checkbox"
+                    v-model="nvlUtilisateur"
+                    class=" p-3 mt-4 text-blanc" />
+            </FormKit>
+            
         </div>
     </div>
     <div class="flex justify-center gap-24 my-20">
