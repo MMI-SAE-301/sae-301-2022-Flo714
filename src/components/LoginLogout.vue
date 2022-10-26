@@ -1,5 +1,6 @@
 <script setup lang="ts">
  import { ref } from "@vue/reactivity";
+ import LoginGoogle from "./LoginGoogle.vue";
  import { supabase, user } from "../supabase";
  async function signIn(data, node) {
     const { user, error } = await (nvlUtilisateur.value
@@ -23,6 +24,7 @@
             <button @pointerdown="supabase.auth.signIn({provider: 'google'})">
             Se connecter avec Google
             </button>
+            <LoginGoogle />
         </div>
     </div>
     <div class="bg-blanc font-inter font-bold text-noir">
