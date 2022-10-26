@@ -12,7 +12,7 @@ import Logo from "./Logo.vue";
                     <Logo class="w-16 h-16 my-3" />
                 </RouterLink>
           </div>
-          <ul class="flex items-center text-xl mx-4 text-blanc font-inter font-bold" >
+          <ul class="flex items-center text-2xl mx-4 text-blanc font-inter font-bold" >
             <li class="my-10">
               <RouterLink class="my-8 p-14 duration-500 hover:bg-blanc hover:text-noir" to="/montre">Nos montres</RouterLink>
             </li>
