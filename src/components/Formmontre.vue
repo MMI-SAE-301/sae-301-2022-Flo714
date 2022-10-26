@@ -41,7 +41,7 @@
 
 <template>
     <div class="p-2">
-        <div class="carousel w-64">
+        <div class="w-64">
             <montreSvg class="w-64" v-bind="montre"/>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre">
