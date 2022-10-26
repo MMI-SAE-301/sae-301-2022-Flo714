@@ -3,14 +3,14 @@
             <Carrousel />
         </div>
         <div>
-        <div class="flex justify-around my-24 ">
-            <div class="box-border border-2 border-gris w-96 h-96 pt-6 pl-8 shadow-ombre" v-for="montre in exemples">
+        <div class="flex justify-around my-24 mx-36">
+            <div class="box-border border-2 border-gris w-[22vw] h-[60vh] pt-11 pl-14 shadow-ombre" v-for="montre in exemples">
                 <div
                     :to="{
                       name: 'montre-exemple-data',
                       params: { data: JSON.stringify(montre) },
                     }">
-                    <MontreSvg class="w-72" v-bind="montre" />
+                    <MontreSvg class="w-96" v-bind="montre" />
                 </div>
             </div>
         </div>
