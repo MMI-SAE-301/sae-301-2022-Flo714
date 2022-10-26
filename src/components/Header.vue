@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Logo from "./Logo.vue";
+import { supabase, user } from "@/supabase";
 
 </script>
 
@@ -16,7 +17,7 @@ import Logo from "./Logo.vue";
             <li class="my-10">
               <RouterLink class="my-8 p-14 duration-500 hover:bg-blanc hover:text-noir" to="/montre">Nos montres</RouterLink>
             </li>
-            <li class="my-10">
+            <li class="my-10" v-if="user">
               <RouterLink class="my-8 p-14 duration-500 hover:bg-blanc hover:text-noir" to="/montre/perso">Mes modèles</RouterLink>
             </li>
             <li class="my-10">
