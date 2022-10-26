@@ -25,24 +25,34 @@
             </button>
         </div>
     </div>
-    <div>
-        <button v-if="user" @pointerdown="supabase.auth.signOut()">
-            Se déconnecter ({{ user.email }})
-        </button>
-        <FormKit
-            v-else
-            type="form"
-            :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
-            @submit="signIn"
-            >
-            <FormKit name="email" label="Votre eMail" type="email" />
-            <FormKit name="password" label="Mot de passe" type="password" />
-            <FormKit
-            label="Nouvel utilisateur ?"
-            name="nvlUtilisateur"
-            type="checkbox"
-            v-model="nvlUtilisateur"
-            />
-        </FormKit>
+    <div class="bg-blanc font-inter font-black text-noir">
+        <div class="container mx-auto p-8">
+            <div class="max-w-xl w-full mx-auto">
+                <div class="bg-white rounded-lg shadow-2xl ">
+                    <div class="p-8 border-2 flex justify-center">
+                        <button v-if="user" @pointerdown="supabase.auth.signOut()">
+                         Se déconnecter ({{ user.email }})
+                        </button>
+                        <FormKit
+                             v-else
+                             type="form"
+                             :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
+                             @submit="signIn"
+                             :submit-attrs="{ classes: { input: 'bg-rouge text-blanc px-4 py-2 rounded-lg hover:bg-noir' } }"
+                             >
+                            <FormKit name="email" label="Votre eMail" type="email" label-class="block mt-4  mb-2 text-xl font-bold" class="block w-full p-3 rounded bg-blanc border focus:outline-none"/>
+                            <FormKit name="password" label="Mot de passe" type="password" label-class="block mt-4 mb-2 text-xl font-bold" class="block w-full p-3 rounded bg-blanc border  focus:outline-none"/>
+                            <FormKit
+                            label="S'inscrire"
+                            name="nvlUtilisateur"
+                            type="checkbox"
+                            v-model="nvlUtilisateur"
+                            class="w-full p-3 mt-4 text-blanc rounded shadow"
+                            />
+                    </FormKit>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>

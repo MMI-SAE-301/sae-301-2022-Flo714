@@ -16,8 +16,11 @@ module.exports = {
       "fontFamily": {
         "inter": "Inter"
       },
-      boxShadow: {
+      "boxShadow": {
         'ombre': '0 35px 35px rgba(217, 217, 217, 1)',
+      },
+      "fontWeight": {
+        'bold': '700',
       }
     }
   },
