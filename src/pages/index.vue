@@ -1,46 +1,12 @@
-<script type lang="ts">
-// import Listemontre from "@/components/Listemontre.vue";
-import type { montre } from "@/types";
-import MontreSvg from "../components/montreSvg.vue";
-import Test from "../components/Test.vue";
-
-const exemples: montre[]  = [{
-    bracelet_montre: "#000000",
-    boitier_montre: "#FF00FF",
-    ecran_montre: "#FFFFFF",
-    boutons_montre: "800000",
-},
-{
-     bracelet_montre: "#0c4039",
-     boitier_montre: "#FFFF00",
-     ecran_montre: "#FFFFFF",
-     boutons_montre: "800000",
-},
-{
-     bracelet_montre: "#0037A3",
-     boitier_montre: "#EFFF37",
-     ecran_montre: "#FFFFFF",
-     boutons_montre: "0037A3",
-},
-];
-
-</script>
-
 <template>
-    <main>
-        <Test />
-        <div>
-            <div class="flex flex-wrap gap-2">
-                <!-- <div class="w-64" v-for="montre in exemples">
-                    <RouterLink
-                      :to="{
-                        name: 'montre-exemple-data',
-                        params: { data: JSON.stringify(montre) },
-                      }">
-                      <MontreSvg class="w-64" v-bind="montre" />
-                    </RouterLink>
-                </div> -->
-            </div>
-        </div>
-    </main>
-</template>
+    <section>
+      <Test />
+      <h1 class="text-2xl">
+        Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
+      </h1>
+    </section>
+  </template>
+  
+  <script setup lang="ts">
+  import Test from "../components/Test.vue"
+  </script>
