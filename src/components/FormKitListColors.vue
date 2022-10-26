@@ -16,9 +16,9 @@ defineProps<{
         :sections-schema="{
         inner: { $el: null },
         decorator: { $el:null },
-        }" input-class="peer sr-only" options-class="flex gap-3 mx-4">
+        }" input-class="peer sr-only" options-class="flex gap-5 mx-4">
         <template #label="context">
-            <div class="h-8 w-8 my-4 rounded-2xl border-2 peer-checked:border-noir peer-checked:border-5" :style="{ backgroundColor: context.option.value}" />
+            <div class="h-8 w-8 my-4 rounded-2xl border-2 peer-checked:border-rouge" :style="{ backgroundColor: context.option.value}" />
             <span class="sr-only">{{ context.option.label }}</span> 
         </template>
     </FormKit>
