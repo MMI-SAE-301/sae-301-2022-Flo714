@@ -40,9 +40,9 @@
 </script>  
 
 <template>
-    <div class="p-2">
-        <div class="w-64">
-            <montreSvg class="w-64" v-bind="montre"/>
+    <div class="p-2 my-24 flex justify-around">
+        <div class="w-1/5">
+            <montreSvg class="" v-bind="montre"/>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre">
             <FormKitListColors name="bracelet_montre" label="Bracelet" />
