@@ -21,6 +21,24 @@ const exemples: montre[]  = [{
      ecran_montre: "#FFFFFF",
      boutons_montre: "#0037A3",
 },
+{
+     bracelet_montre: "#0037A3",
+     boitier_montre: "#EFFF37",
+     ecran_montre: "#FFFFFF",
+     boutons_montre: "#0037A3",
+},
+{
+     bracelet_montre: "#0037A3",
+     boitier_montre: "#EFFF37",
+     ecran_montre: "#FFFFFF",
+     boutons_montre: "#0037A3",
+},
+{
+     bracelet_montre: "#0037A3",
+     boitier_montre: "#EFFF37",
+     ecran_montre: "#FFFFFF",
+     boutons_montre: "#0037A3",
+},
 ];
 
 </script>
