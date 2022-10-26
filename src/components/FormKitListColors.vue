@@ -18,7 +18,7 @@ defineProps<{
         decorator: { $el:null },
         }" input-class="peer sr-only" options-class="flex gap-5 mx-4">
         <template #label="context">
-            <div class="h-8 w-8 my-4 rounded-2xl border-2 peer-checked:border-rouge" :style="{ backgroundColor: context.option.value}" />
+            <div class="h-8 w-8 my-4 rounded-2xl border-2 peer-checked:border-rouge peer-checked:ring-2 peer-checked:ring-rouge hover:ring-2 hover:ring-rouge" :style="{ backgroundColor: context.option.value}" />
             <span class="sr-only">{{ context.option.label }}</span> 
         </template>
     </FormKit>

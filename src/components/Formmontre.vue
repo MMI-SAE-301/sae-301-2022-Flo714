@@ -52,15 +52,15 @@
         <div class="w-1/5">
             <montreSvg class="" v-bind="montre"/>
         </div>
-        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'bg-rouge p-4 px-8 rounded-full font-bold text-blanc font-font-inter hover:bg-noir' } }">
+        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-6 bg-rouge p-4 px-8 rounded-full font-bold text-blanc font-font-inter hover:bg-noir' } }">
             <div class="font-bold text-3xl my-8">
                 <FormKitListColors  name="bracelet_montre" label="Bracelet" />
             </div>
             <div class="font-bold text-3xl my-8">
                 <FormKitListColors name="boitier_montre" label="Boitier" />
             </div>
-            <div class="font-bold text-3xl my-8">
-                <FormKitListColors name="ecran_montre" label="Écran" />
+            <div class="font-bold text-3xl my-8 ">
+                <FormKitListColors name="ecran_montre" label="Écran" class=""/>
             </div> 
             <div class="font-bold text-3xl my-8">
                 <FormKitListColors name="boutons_montre" label="Boutons" />
@@ -96,8 +96,8 @@
                     </div>
                 </RadioGroup>
             </div>
-            <div >
-                <FormKit name="commander" label="Commander" type="checkbox" />
+            <div class="flex">
+                <FormKit name="commander" label="Commander" type="checkbox" classe=""/>
             </div>
 
         </FormKit>
