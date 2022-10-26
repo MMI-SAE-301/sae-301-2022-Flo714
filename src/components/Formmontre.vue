@@ -40,7 +40,7 @@
 </script>  
 
 <template>
-    <div class="p-2 my-24 flex justify-around">
+    <div class="p-2 my-24 flex justify-center gap-24">
         <div class="w-1/5">
             <montreSvg class="" v-bind="montre"/>
         </div>
