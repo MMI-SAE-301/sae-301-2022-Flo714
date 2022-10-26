@@ -36,12 +36,12 @@ const selected = ref(plans[0])
                         v-slot="{ active, checked }">
                         <div :class="[
                           active
-                            ? 'ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-sky-300'
+                            ? 'ring-2 ring-noir'
                             : '',
-                          checked ? 'bg-sky-900 bg-opacity-75 text-white ' : 'bg-white ',
+                          checked ? 'bg-noir bg-opacity-5 text-noir ' : 'bg-blanc ',
                             ]"
-                            class="relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none">
-                            <div class="flex w-full items-center justify-between">
+                            class="cursor-pointer rounded-lg px-5 py-4 border-2">
+                            <div class="flex w-full justify-between">
                                 <div class="flex items-center">
                                     <div class="text-sm">
                                         <RadioGroupLabel
