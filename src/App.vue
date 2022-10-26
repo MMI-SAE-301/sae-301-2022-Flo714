@@ -5,7 +5,7 @@
     <router-view class="m-2 p-2" />
   </Suspense>
   
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 
 <script setup lang="ts">
