@@ -1,23 +1,46 @@
-<template>
-  <section class="p-0 m-0 w-full">
-    <Carrousel />
-    <div>
-        <div class="flex flex-wrap gap-2">
-      <div class="w-64" v-for="montre in exemples">
-        <RouterLink
-          :to="{
-            name: 'montre-exemple-data',
-            params: { data: JSON.stringify(montre) },
-          }"
-        >
-          <MontreSvg class="w-64" v-bind="montre" />
-        </RouterLink>
-      </div>
-    </div>
-    </div>
-  </section>
-</template>
-
 <script type lang="ts">
-import Carrousel from "../components/Carousel.vue"
+import Carrousel from "../components/Carousel.vue";
+import Listemontre from "@/components/Listemontre.vue";
+import type { montre } from "@/types";
+import MontreSvg from "@/components/montreSvg.vue";
+
+const exemples: montre[]  = [{
+    bracelet_montre: "#000000",
+    boitier_montre: "#FF00FF",
+    ecran_montre: "#FFFFFF",
+    boutons_montre: "800000",
+},
+{
+     bracelet_montre: "#0c4039",
+     boitier_montre: "#FFFF00",
+     ecran_montre: "#FFFFFF",
+     boutons_montre: "800000",
+},
+{
+     bracelet_montre: "#0037A3",
+     boitier_montre: "#EFFF37",
+     ecran_montre: "#FFFFFF",
+     boutons_montre: "0037A3",
+},
+];
+
 </script>
+
+<template>
+    <main>
+        <Carrousel />
+        <div>
+            <div class="flex flex-wrap gap-2">
+                <div class="w-64" v-for="montre in exemples">
+                    <RouterLink
+                      :to="{
+                        name: 'montre-exemple-data',
+                        params: { data: JSON.stringify(montre) },
+                      }">
+                      <MontreSvg class="w-64" v-bind="montre" />
+                    </RouterLink>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

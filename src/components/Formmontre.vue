@@ -45,12 +45,12 @@
             <montreSvg class="w-64" v-bind="montre"/>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre">
-            <FormKitListColors name="bracelet_montre" label="bracelet" />
+            <FormKitListColors name="bracelet_montre" label="Bracelet" />
             <FormKit type="select" name="id_materiaux" label="Materiaux du bracelet" :options="optionsMateriaux" />
-            <FormKitListColors name="boitier_montre" label="boitier" />
-            <FormKitListColors name="ecran_montre" label="ecran" />
-            <FormKitListColors name="boutons_montre" label="boutons" />
-            <FormKit name="commander" label="commander" type="checkbox" />
+            <FormKitListColors name="boitier_montre" label="Boitier" />
+            <FormKitListColors name="ecran_montre" label="Écran" />
+            <FormKitListColors name="boutons_montre" label="Boutons" />
+            <FormKit name="commander" label="Commander" type="checkbox" />
         </FormKit>
     </div>
 </template>
