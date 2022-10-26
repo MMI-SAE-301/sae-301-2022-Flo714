@@ -10,13 +10,13 @@
                       name: 'montre-exemple-data',
                       params: { data: JSON.stringify(montre) },
                     }">
-                    <MontreSvg class="w-[100%] box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[120%]" v-bind="montre" />
+                    <MontreSvg class="w-[110%] box-border border-2 border-gris py-11 px-14 shadow-ombre hover:w-[130%]" v-bind="montre" />
                 </div>
             </div>
         </div>
         <div class="my-3 mb-40 ml-4 flex justify-center ">
             <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir" to="/montre/new">
-                <p class="text-4xl font-inter font-bold text-center">Personnaliser<br />
+                <p class="text-5xl font-inter font-bold text-center">Personnaliser<br />
                      ma montre</p></RouterLink>
         </div>
     </div>
