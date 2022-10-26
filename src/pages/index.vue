@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="mx-10 mt-24 mb-10">
+    <div class="mx-10 mt-24 mb-40">
         <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10 pb-24">
             <h2 class="text-4xl pt-10 pb-24 font-bold">TiK•TaK, une fabrication Française</h2>
             <div class="py-10">
