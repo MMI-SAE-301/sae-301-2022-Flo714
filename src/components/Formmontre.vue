@@ -5,6 +5,12 @@
     import montreSvg from "./montreSvg.vue";
     import Choixmat from "./Choixmat.vue";
     import FormKitListColors from "./FormKitListColors.vue";
+    import {
+      RadioGroup,
+      RadioGroupLabel,
+      RadioGroupDescription,
+      RadioGroupOption,
+    } from '@headlessui/vue'
 
     const router = useRouter();
     const montre = ref({});
@@ -38,6 +44,7 @@
             router.push({ name: "montre-edit-id", params: { id: data[0].id_montre } });
         }
     }
+
     
 </script>  
 
@@ -59,12 +66,40 @@
             <div class="font-bold text-3xl my-8">
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
-            <div class="font-bold text-3xl">
-                <Choixmat type="select" name="id_materiaux" label="Materiaux du bracelet"/>
+            <div class="font-bold text-3xl my-8">
+                <RadioGroup v-model="montre.id_materiaux" >
+                    <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
+                        <div class="flex gap-10 ">
+                            <RadioGroupOption class=""
+                                as="template"
+                                v-for="materiaux in listeMateriaux"
+                                :key="materiaux.id_materiaux"
+                                :value="materiaux.id_materiaux"
+                                v-slot="{ active, checked }">
+                                <div :class="[
+                                  active
+                                    ? 'ring-2 ring-noir'
+                                    : '',
+                                  checked ? 'bg-rouge text-blanc hover:ring-2 hover:ring-noir ' : ' bg-blanc border-2 hover:ring-2 hover:ring-noir',
+                                    ]"
+                                    class="cursor-pointer rounded-lg px-10 py-4 border-2 border-noir ">
+                                    <div class="text-sm">
+                                        <RadioGroupLabel
+                                            as="p"
+                                            :class="checked ? 'text-blanc' : 'text-noir '"
+                                            class="font-medium ">
+                                            {{ materiaux.libelle_materiaux }}
+                                        </RadioGroupLabel>
+                                    </div>
+                                </div>
+                        </RadioGroupOption>
+                    </div>
+                </RadioGroup>
             </div>
             <div >
                 <FormKit name="commander" label="Commander" type="checkbox" />
             </div>
+
         </FormKit>
     </div>
 </template>

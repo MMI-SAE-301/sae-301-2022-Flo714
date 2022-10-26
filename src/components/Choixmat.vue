@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { supabase } from "@/supabase";
 import {
   RadioGroup,
   RadioGroupLabel,
@@ -18,6 +19,15 @@ const plans = [
     materiaux: 'Caoutchouc',
   },
 ]
+const { data: listeMateriaux, error } = await supabase
+          .from("materiaux")
+          .select("*");
+        if (error) console.log("n'a pas pu charger la table Matériaux :", error);
+        // Les convertir par map en un tableau d'objets {value, label} pour FormKit
+        const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
+          value: materiaux.id_materiaux,
+          label: materiaux.libelle_materiaux,
+    }));
 
 const selected = ref(plans[0])
 </script>
@@ -25,7 +35,7 @@ const selected = ref(plans[0])
 <template>
     <div class="w-full px-4 py-8">
       <div class="mx-auto w-full max-w-md">
-        <RadioGroup v-model="selected">
+        <RadioGroup v-model="selected" :options="optionsMateriaux">
             <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
                 <div class="flex gap-10 ">
                     <RadioGroupOption class=""
