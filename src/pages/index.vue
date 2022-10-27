@@ -6,6 +6,7 @@
     <div>
         <div class="flex justify-around my-20 mx-36">
             <div class="" v-for="montre in exemples">
+                <span class="sr-only">Liste d'exemple de montres</span>
                 <div
                     :to="{
                       name: 'montre-exemple-data',
@@ -16,12 +17,14 @@
             </div>
         </div>
         <div class="my-3 mb-20 ml-4 flex justify-center ">
+            <span class="sr-only">Bouton qui permet de personnaliser sa montre</span>
             <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir hover:dark:text-noir hover:dark:bg-blanc" to="/montre/new">
                 <p class="text-3xl font-inter font-bold text-center">Personnaliser<br />
                      ma montre</p></RouterLink>
         </div>
     </div>
     <div class="mx-10">
+        <span class="sr-only">Article sur la pratique du sport avec Tik Tak</span>
         <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10">
             <h2 class="text-3xl pt-10 font-bold">Pratiquer du sport avec TiK•TaK</h2>
             <div class="py-10">
@@ -34,6 +37,7 @@
         </div>
     </div>
     <div class="mx-10 my-72">
+        <span class="sr-only">Article sur les matéraux utilisés par Tik Tak</span>
         <div class="flex justify-start -mb-[70vh]">
             <img class="w-[45%] rounded-xl" src="../assets/Caoutchouc.jpg" alt="Caoutchouc">
         </div>
@@ -49,6 +53,7 @@
         </div>
     </div>
     <div class="mx-10 mt-24 mb-40">
+        <span class="sr-only">Article sur les lieux de fabrication de Tik Tak</span>
         <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10 pb-6">
             <h2 class="text-3xl pt-10 pb-6 font-bold">TiK•TaK, une fabrication Française</h2>
             <div class="py-10">
