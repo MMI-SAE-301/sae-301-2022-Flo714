@@ -70,14 +70,8 @@ AS PERMISSIVE FOR DELETE
 TO public
 USING (auth.uid() = id_utilisateurs )
 
-
--- drop policy "Les gens peuvent modifier" ON public.montre
-
 CREATE POLICY "Les gens peuvent modifier"
 ON public.montre
 FOR UPDATE USING(
     (uid() = id_utilisateurs) AND (commander = false))
--- WITH CHECK (
---     uid() IN (uid() = id_utilisateurs)
--- )
 
