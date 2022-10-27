@@ -44,6 +44,7 @@ const exemples: montre[]  = [{
 </script>
 <template>
   <section>
+    <span class="sr-only">Liste d'exemples de montre</span>
     <h1 class="text-5xl font-extrabold font-inter my-10 mx-16 dark:text-blanc">Nos montres</h1>
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(250px,2fr))] mx-[15%]  gap-36 justify-items-center my-20">
       <div class="" v-for="montre in exemples">
