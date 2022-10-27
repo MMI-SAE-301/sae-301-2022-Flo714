@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 
+// @ts-nocheck
 
 import { supabase, user } from "../supabase";
 import { ref } from "@vue/reactivity";
