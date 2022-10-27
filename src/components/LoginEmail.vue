@@ -1,6 +1,6 @@
 <template>
     <div class="bg-blanc font-inter font-bold text-noir">
-        <div class="p-8 flex justify-center">
+        <div class="p-8 mx-auto">
             <button v-if="user" @pointerdown="supabase.auth.signOut()">
              Se déconnecter ({{ user.email }})
             </button>
@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+
 
 import { supabase, user } from "../supabase";
 import { ref } from "@vue/reactivity";
