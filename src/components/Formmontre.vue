@@ -106,7 +106,7 @@
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
             <div class="font-bold text-xl my-4">
-                <p class="my-8">Matériaux du bracelets</p>
+                <p class="my-8 dark:text-blanc">Matériaux du bracelets</p>
                 <RadioGroup v-model="montre.id_materiaux" class="mx-4">
                     <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
                         <div class="flex gap-10 ">
@@ -120,7 +120,7 @@
                                   active
                                     ? 'ring-2 ring-noir'
                                     : '',
-                                  checked ? 'bg-rouge text-blanc hover:ring-2 hover:ring-noir ' : ' bg-blanc border-2 hover:ring-2 hover:ring-noir',
+                                  checked ? 'bg-rouge text-blanc hover:ring-2 hover:ring-noir hover:dark:ring-blanc  ' : ' bg-blanc border-2 hover:ring-2 hover:ring-noir hover:dark:ring-blanc',
                                     ]"
                                     class="cursor-pointer rounded-lg px-10 py-4 border-2 border-noir ">
                                     <div class="text-sm">
