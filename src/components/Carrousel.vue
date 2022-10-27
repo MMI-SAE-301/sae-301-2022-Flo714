@@ -24,21 +24,21 @@
         </div>
         <div class="carousel-inner relative w-full overflow-hidden">
             <div class="carousel-item active float-left w-full">
-                <img src="../assets/Carrousel_1.jpg"
+                <img src="../assets/Carrousel1.jpg"
                     class="block w-full"
                     alt="Sportifs qui portent une montre"/>
                 <h2 class="absolute top-8 left-16 text-blanc text-5xl font-black">Votre montre, votre monde</h2>
                 <p class="absolute top-40 right-24 text-blanc text-3xl font-bold">Personnalisez votre montre à votre goût</p>
             </div>
             <div class="carousel-item float-left w-full">
-                <img src="../assets/Carrousel_2.jpg"
+                <img src="../assets/Carrousel2.jpg"
                     class="block w-full"
                     alt="Cylciste qui portent une montre"/>
                 <h2 class="absolute top-8 left-16 text-blanc text-5xl font-black">Explorer les 4 coins du monde</h2>
                 <p class="absolute top-52 left-36 text-blanc text-3xl font-bold">Parcourez les chemins en vélo</p>
             </div>
             <div class="carousel-item float-left w-full">
-                <img src="../assets/Carrousel_3.jpg"
+                <img src="../assets/Carrousel3.jpg"
                     class="block w-full"
                     alt="Exotic Fruits"/>
                 <h2 class="absolute top-16 left-16 text-blanc text-5xl font-black">Découvrez les fonctionnalitées</h2>
