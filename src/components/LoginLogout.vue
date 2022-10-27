@@ -22,7 +22,7 @@ import LoginEmail from "./LoginEmail.vue";
     <div>
         <p class="font-black flex justify-center text-xl my-2 dark:text-blanc">- OU -</p>
     </div>
-    <div class="flex justify-center gap-24 my-10">
+    <div class="flex justify-center gap-24 my-10 dark:pb-20">
         <div>
             <button class="flex items-center gap-6 bg-bleu px-6 py-2 rounded-lg font-inter font-bold text-xl text-blanc hover:bg-noir hover:text-blanc duration-300 hover:dark:text-noir hover:dark:bg-blanc" @pointerdown="supabase.auth.signIn({provider: 'facebook'})"><LoginFacebook />
             Se connecter avec Facebook

@@ -1,12 +1,13 @@
 <template>
     <div class="bg-blanc font-inter font-bold text-noir dark:bg-noir">
         <div class="p-8 flex justify-center">
-            <button v-if="user" @pointerdown="supabase.auth.signOut()">
+            <button v-if="user" class="dark:text-blanc" @pointerdown="supabase.auth.signOut()">
              Se déconnecter ({{ user.email }})
             </button>
             <FormKit
                  v-else
                  type="form"
+                 
                  :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
                  @submit="signIn"
                  :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir duration-500 hover:dark:text-noir hover:dark:bg-blanc' } }"
