@@ -3,7 +3,7 @@
         <Carrousel />
     </div>
     <div>
-        <div class="flex justify-around my-40 mx-36">
+        <div class="flex justify-around my-20 mx-36">
             <div class="" v-for="montre in exemples">
                 <div
                     :to="{
@@ -14,9 +14,9 @@
                 </div>
             </div>
         </div>
-        <div class="my-3 mb-40 ml-4 flex justify-center ">
+        <div class="my-3 mb-20 ml-4 flex justify-center ">
             <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir dur" to="/montre/new">
-                <p class="text-5xl font-inter font-bold text-center">Personnaliser<br />
+                <p class="text-3xl font-inter font-bold text-center">Personnaliser<br />
                      ma montre</p></RouterLink>
         </div>
     </div>
