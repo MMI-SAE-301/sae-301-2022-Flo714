@@ -89,7 +89,7 @@
             <h2 class="text-2xl font-bold border-b-2 border-rouge w-1/4 pb-2">Prix</h2>
             <div class="flex items-center gap-4">
                 <p class="text-4xl font-black py-4">349.99 €</p>
-                <p class="text-lg py-4"> au lieu 499.99 €</p>
+                <p class="text-lg py-4 line-through"> au lieu 499.99 €</p>
             </div>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
