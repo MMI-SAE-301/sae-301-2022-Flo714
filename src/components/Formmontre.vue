@@ -80,7 +80,7 @@
 </script>  
 
 <template>
-    <div class="p-2 my-4 flex justify-center gap-56">
+    <div class="p-2 my-4 flex justify-center gap-56 font-inter">
         <div class="w-1/5">
             <montreSvg class="my-20" v-bind="montre"/>
         </div>
@@ -142,27 +142,30 @@
                 </Switch>
                 <p class="font-bold text-xl my-4">Voulez vous commander votre montre</p>
             </div>
-            <div class="flex justify-end absolute">
+            <div class="flex justify-end font-bold mt-4">
                 <button
                   type="button"
                   v-if="Suprmontre.id_montre"
                   @click="($refs.dialogSupprimer as any).showModal()"
                   class="justify-self-end rounded-md text-blanc bg-noir hover:bg-rouge p-2 shadow-sm">
-                  Supprimer l'offre
+                  Supprimer ma montre
                 </button>
                 <dialog
                   ref="dialogSupprimer"
+                  class=""
                   @click="($event.currentTarget as any).close()">
-                    <button
-                        type="button"
-                        class="justify-self-end rounded-md bg-blanc p-2 shadow-sm">
-                        Annuler</button>
-                    <button
-                        type="button"
-                        @click="supprimerMontre()"
-                        class="rounded-md bg-rouge p-2 shadow-sm">
-                        Confirmer suppression
-                    </button>
+                  <div class="flex gap-9 p-10">
+                        <button
+                            type="button"
+                            class="justify-self-end rounded-md bg-blanc px-6 py-4 shadow-sm border-2 hover:bg-rouge">
+                            Annuler</button>
+                        <button
+                            type="button"
+                            @click="supprimerMontre()"
+                            class="rounded-md bg-rouge text-blanc p-2 shadow-sm border-2 border-noir hover:bg-noir">
+                            Confirmer suppression
+                        </button>
+                    </div>
                 </dialog>
             </div>
 
