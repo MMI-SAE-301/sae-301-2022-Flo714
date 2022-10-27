@@ -45,7 +45,7 @@ const exemples: montre[]  = [{
 <template>
   <section>
     <h1 class="text-5xl font-extrabold font-inter my-10 mx-16">Nos montres</h1>
-    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,2fr))] mx-[15%]  gap-36 justify-items-center my-20">
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(250px,2fr))] mx-[15%]  gap-36 justify-items-center my-20">
       <div class="" v-for="montre in exemples">
         <div
           :to="{
@@ -53,7 +53,7 @@ const exemples: montre[]  = [{
             params: { data: JSON.stringify(montre) },
           }"
         >
-          <MontreSvg class="w-[100%] box-border border-none border-gris py-11 px-14 shadow-ombre hover:w-[120%] duration-500" v-bind="montre" />
+          <MontreSvg class="w-[110%] box-border border-none border-gris py-11 px-14 shadow-ombre hover:w-[120%] duration-500" v-bind="montre" />
         </div>
       </div>
     </div>
