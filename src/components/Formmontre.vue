@@ -136,7 +136,7 @@
                     </div>
                 </RadioGroup>
             </div>
-            <div class="flex items-center gap-12">
+            <div class="flex items-center gap-12 mt-10">
                 <Switch
                      v-model="montre.commander"
                      :class="montre.commander ? 'bg-bleu' : 'bg-rouge'"
