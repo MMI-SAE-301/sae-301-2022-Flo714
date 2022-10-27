@@ -3,6 +3,7 @@ import Listemontre from "@/components/Listemontre.vue";
 import { supabase, user } from '@/supabase';
 </script>
 <template>
+  <span class="sr-only">Liste de mes montres personnel</span>
   <section>
     <h1 class="text-5xl font-extrabold font-inter my-10 mx-16">Mes modèles</h1>
     <div class="">
