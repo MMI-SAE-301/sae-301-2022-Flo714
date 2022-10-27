@@ -53,9 +53,6 @@ and "materiaux"."libelle_materiaux" = 'Carbone'
 -- code pour la création des policies
 --
 
-drop POLICY "Voir toutes les montres"
-ON public.montre;
-
 CREATE POLICY "Voir toutes les montres"
 ON public.montre
 FOR SELECT USING (
