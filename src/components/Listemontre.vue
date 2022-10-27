@@ -19,7 +19,7 @@ if (error) {
         <router-link
             :to="{ name: 'montre-edit-id', params: { id: montre.id_montre } }"
             >
-            <montreSvg class=" w-[110%] box-border border-none border-gris py-11 px-14 shadow-ombre hover:w-[120%] duration-500" v-bind="montre" />
+            <montreSvg class=" w-[110%] box-border border-none border-gris py-11 px-14 shadow-ombre hover:w-[120%] duration-500 dark:bg-blanc" v-bind="montre" />
         </router-link>
         </li>
     </ul>
