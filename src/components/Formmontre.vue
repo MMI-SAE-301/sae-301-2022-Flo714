@@ -92,7 +92,7 @@
                 <p class="text-lg py-4 line-through dark:text-blanc"> au lieu 499.99 €</p>
             </div>
         </div>
-        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
+        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir hover:dark:bg-blanc hover:dark:text-noir' } }">
             <div class="font-bold text-xl my-4 dark:text-blanc">
                 <FormKitListColors  name="bracelet_montre" label="Bracelet" />
             </div>
