@@ -24,11 +24,11 @@
         <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10 pb-24">
             <h2 class="text-4xl pt-10 pb-24 font-bold">Pratiquer du sport avec TiK•TaK</h2>
             <div class="py-10">
-                <p class="text-2xl pr-[50%] py-5 pl-5">Pratiquer du sport vous permettra d’être en meilleure santé et d’être plus heureux.  Alors pourquoi ne pas essayer la TiK•TaK durant vos meilleures activités physiques.  Elle dispose de multiples fonctionnalités pour vous satisfaire. Vous pouvez ainsi pratiquer votre passion.</p>
-                <p class="text-2xl pr-[50%] py-5 pl-5">Personnaliser votre montre à votre goût pour la rendre unique.  </p>
+                <p class="text-2xl pr-[40%] py-5 pl-5">Pratiquer du sport vous permettra d’être en meilleure santé et d’être plus heureux.  Alors pourquoi ne pas essayer la TiK•TaK durant vos meilleures activités physiques.  Elle dispose de multiples fonctionnalités pour vous satisfaire. Vous pouvez ainsi pratiquer votre passion.</p>
+                <p class="text-2xl pr-[40%] py-5 pl-5">Personnaliser votre montre à votre goût pour la rendre unique.  </p>
             </div>
         </div>
-        <div class="flex justify-end -mt-[50vh] mr-40">
+        <div class="flex justify-end -mt-[55vh] mr-6">
             <img class="w-[50%] rounded-xl" src="../assets/Sport.jpg" alt="Pratiquer du Sport">
         </div>
     </div>
