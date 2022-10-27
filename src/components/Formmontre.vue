@@ -50,7 +50,7 @@
 </script>  
 
 <template>
-    <div class="p-2 my-24 flex justify-center gap-56">
+    <div class="p-2 my-4 flex justify-center gap-56">
         <div class="w-1/5">
             <montreSvg class="" v-bind="montre"/>
         </div>
@@ -102,15 +102,15 @@
                 <Switch
                      v-model="montre.commander"
                      :class="montre.commander ? 'bg-bleu' : 'bg-rouge'"
-                     class="relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-noir transition-colors duration-500 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-100">               
+                     class="relative inline-flex h-[25px] w-[50px] shrink-0 cursor-pointer rounded-full border-2 border-noir transition-colors duration-500 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-100">               
                      <span class="sr-only">Use setting</span>
                      <span
                        aria-hidden="true"
-                       :class="montre.commander ? 'translate-x-9 bg-blanc' : 'translate-x-0 bg-blanc'"
-                       class="pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full shadow-lg transition duration-500 ease-in-out"
+                       :class="montre.commander ? 'translate-x-6 bg-blanc' : 'translate-x-0 bg-blanc'"
+                       class=" pointer-events-none inline-block h-[21px] w-[21px] transform rounded-full shadow-lg transition duration-500 ease-in-out"
                      />
                 </Switch>
-                <p class="font-bold text-xl my-8">Voulez vous commander votre montre</p>
+                <p class="font-bold text-xl my-4">Voulez vous commander votre montre</p>
             </div>
 
         </FormKit>
