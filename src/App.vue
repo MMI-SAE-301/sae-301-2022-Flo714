@@ -1,8 +1,10 @@
 <template>
   <Header />
   <!-- Affiche les pages -->
-  <Suspense>
-    <router-view class="m-2 p-2" />
+  <Suspense class="">
+    <div class="dark:bg-noir">
+      <router-view class="m-2 p-2" />
+    </div>
   </Suspense>
   
   <Footer />
