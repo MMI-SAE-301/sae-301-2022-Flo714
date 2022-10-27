@@ -37,6 +37,19 @@
         console.log("n'a pas pu charger la table montre :", error);
         else montre.value = data[0];
     } 
+
+    const Suprmontre: ref<any> = ref({});
+        if (props.id_montre) {
+          // On charge les données de la vue quartiercommune
+          let { data, error } = await supabase
+            .from("montre")
+            .select("*")
+            .eq("id_montre", props.id_montre);
+          if (error || !data)
+            console.log("n'a pas pu charger le table Maison :", error);
+          else Suprmontre.value = data[0];
+        }
+
     async function upsertmontre(dataForm, node) {
         const { data, error } = await supabase.from("montre").upsert(dataForm);
         if (error) node.setErrors([error.message]);
@@ -45,6 +58,23 @@
             router.push({ name: "montre-perso", params: { id: data[0].id_montre } });
         }
     }
+    async function supprimerMontre() {
+        const { data, error } = await supabase
+          .from("montre")
+          .delete()
+          .match({ id_montre: Suprmontre.value.id_montre })
+
+          if (error) {
+            console.error(
+              "Erreur à la suppression de ",
+              Suprmontre.value.id_montre,
+              "erreur :",
+              error
+            );
+          } else {
+            router.push("/montre/perso");
+          }
+        }
 
     
 </script>  
@@ -111,6 +141,29 @@
                      />
                 </Switch>
                 <p class="font-bold text-xl my-4">Voulez vous commander votre montre</p>
+            </div>
+            <div class="flex justify-end absolute">
+                <button
+                  type="button"
+                  v-if="Suprmontre.id_montre"
+                  @click="($refs.dialogSupprimer as any).showModal()"
+                  class="justify-self-end rounded-md text-blanc bg-noir hover:bg-rouge p-2 shadow-sm">
+                  Supprimer l'offre
+                </button>
+                <dialog
+                  ref="dialogSupprimer"
+                  @click="($event.currentTarget as any).close()">
+                    <button
+                        type="button"
+                        class="justify-self-end rounded-md bg-blanc p-2 shadow-sm">
+                        Annuler</button>
+                    <button
+                        type="button"
+                        @click="supprimerMontre()"
+                        class="rounded-md bg-rouge p-2 shadow-sm">
+                        Confirmer suppression
+                    </button>
+                </dialog>
             </div>
 
         </FormKit>
