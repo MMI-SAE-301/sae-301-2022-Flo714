@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="flex justify-end -mt-[50vh] mr-20">
-            <img class="w-[45%] rounded-xl" src="../assets/Tik Tak_fr.jpg" alt="Pratiquer du Sport">
+            <img class="w-[45%] rounded-xl" src="../assets/TikTakfr.jpg" alt="Pratiquer du Sport">
         </div>
     </div>
 </template>
