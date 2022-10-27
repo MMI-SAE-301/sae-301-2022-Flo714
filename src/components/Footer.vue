@@ -3,12 +3,12 @@
 </script>
 
 <template>
-    <footer class="bg-noir py-10">
-        <div class="ml-24 flex flex-wrap justify-left text-lg text-blanc">
+    <footer class="bg-noir py-10 dark:bg-blanc">
+        <div class="ml-24 flex flex-wrap justify-left text-lg text-blanc dark:text-noir">
 
             <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 
-                <div class="uppercase text-white text-sm font-bold mb-6 border-b-2 border-blanc pb-4 w-1/4">
+                <div class="uppercase text-white text-sm font-bold mb-6 border-b-2 border-blanc pb-4 w-1/4 dark:border-noir">
                     Lien
                 </div>
                 <RouterLink class=" font-semibold duration-500 hover:text-rouge" to="/">Accueil</RouterLink>
@@ -19,7 +19,7 @@
                     to="/montre/perso">Se connecter</RouterLink>
             </div>
             <div class="p-5 w-10/12 sm:w-4/12 md:w-3/12 flex flex-col ">
-                <div class="uppercase text-white font-bold mb-6 border-b-2 border-blanc pb-4 w-1/2 text-sm">
+                <div class="uppercase text-white font-bold mb-6 border-b-2 border-blanc pb-4 w-1/2 text-sm dark:border-noir">
                     Obtenir de l'aide
                 </div>
                 <a class="my-3  hover:text-rouge text-xs sm:text-lg  font-semibold duration-700 " href="florentin.demortiere@edu.univ-fcomte.fr">florentin.demortiere@edu.univ-fcomte.fr</a>
