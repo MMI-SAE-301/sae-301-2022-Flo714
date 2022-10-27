@@ -86,7 +86,7 @@
     <div class="p-2 my-4 flex justify-center gap-56 font-inter">
         <div class="w-1/5">
             <montreSvg class="my-20" v-bind="montre"/>
-            <h2 class="text-2xl font-bold border-b-2 w-1/4 pb-2">Prix</h2>
+            <h2 class="text-2xl font-bold border-b-2 border-rouge w-1/4 pb-2">Prix</h2>
             <div class="flex items-center gap-4">
                 <p class="text-4xl font-black py-4">349.99 €</p>
                 <p class="text-lg py-4"> au lieu 499.99 €</p>
