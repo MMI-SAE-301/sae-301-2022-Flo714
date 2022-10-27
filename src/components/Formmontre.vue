@@ -54,20 +54,20 @@
         <div class="w-1/5">
             <montreSvg class="" v-bind="montre"/>
         </div>
-        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-6 px-10 rounded-full font-bold text-blanc text-3xl font-font-inter hover:bg-noir' } }">
-            <div class="font-bold text-3xl my-8">
+        <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
+            <div class="font-bold text-xl my-4">
                 <FormKitListColors  name="bracelet_montre" label="Bracelet" />
             </div>
-            <div class="font-bold text-3xl my-8">
+            <div class="font-bold text-xl my-4">
                 <FormKitListColors name="boitier_montre" label="Boitier" />
             </div>
-            <div class="font-bold text-3xl my-8 ">
+            <div class="font-bold text-xl my-4">
                 <FormKitListColors name="ecran_montre" label="Écran" class=""/>
             </div> 
-            <div class="font-bold text-3xl my-8">
+            <div class="font-bold text-xl my-4">
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
-            <div class="font-bold text-3xl my-8">
+            <div class="font-bold text-xl my-4">
                 <p class="my-8">Matériaux du bracelets</p>
                 <RadioGroup v-model="montre.id_materiaux" class="mx-4">
                     <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
@@ -110,7 +110,7 @@
                        class="pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full shadow-lg transition duration-500 ease-in-out"
                      />
                 </Switch>
-                <p class="font-bold text-3xl my-8">Voulez vous commander votre montre</p>
+                <p class="font-bold text-xl my-8">Voulez vous commander votre montre</p>
             </div>
 
         </FormKit>
