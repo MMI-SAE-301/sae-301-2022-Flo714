@@ -36,11 +36,12 @@ Noté sur 40.
   - lien vers sa définition
   - lien vers son usage
 - [X] Composants graphiques (0-1-2pts)
-  - liens
+  - [Lien composant](/src/components/Formmontre.vue#L114)
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
     config. Tailwind (eg. before/after avec content, background...))
-    - ...
+    - Backgroud
+    - Font
   - liens
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
