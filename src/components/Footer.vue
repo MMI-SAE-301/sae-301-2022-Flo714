@@ -9,6 +9,7 @@
             <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 
                 <div class="uppercase text-white text-sm font-bold mb-6 border-b-2 border-blanc pb-4 w-1/4 dark:border-noir">
+                <span class="sr-only">Liens du site</span>
                     Lien
                 </div>
                 <RouterLink class=" font-semibold duration-500 hover:text-rouge" to="/">Accueil</RouterLink>
@@ -20,6 +21,7 @@
             </div>
             <div class="p-5 w-10/12 sm:w-4/12 md:w-3/12 flex flex-col ">
                 <div class="uppercase text-white font-bold mb-6 border-b-2 border-blanc pb-4 w-1/2 text-sm dark:border-noir">
+                <span class="sr-only">Mail</span>
                     Obtenir de l'aide
                 </div>
                 <a class="my-3  hover:text-rouge text-xs sm:text-lg  font-semibold duration-700 " href="florentin.demortiere@edu.univ-fcomte.fr">florentin.demortiere@edu.univ-fcomte.fr</a>
