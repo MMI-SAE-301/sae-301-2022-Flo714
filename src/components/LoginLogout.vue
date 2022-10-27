@@ -1,4 +1,7 @@
 <script setup lang="ts">
+
+// @ts-nocheck
+
  import { ref } from "@vue/reactivity";
  import LoginGoogle from "./LoginGoogle.vue";
  import { supabase, user } from "../supabase";
