@@ -28,7 +28,7 @@
 
     const props = defineProps(["id_montre", "montre"]);
     if (props.id_montre) {
-        // On charge les données de la table Basket
+        // On charge les données de la table montre
         let { data, error } = await supabase
         .from("montre")
         .select("*")
@@ -86,6 +86,11 @@
     <div class="p-2 my-4 flex justify-center gap-56 font-inter">
         <div class="w-1/5">
             <montreSvg class="my-20" v-bind="montre"/>
+            <h2 class="text-2xl font-bold border-b-2 w-1/4 pb-2">Prix</h2>
+            <div class="flex items-center gap-4">
+                <p class="text-4xl font-black py-4">349.99 €</p>
+                <p class="text-lg py-4"> au lieu 499.99 €</p>
+            </div>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
             <div class="font-bold text-xl my-4">
