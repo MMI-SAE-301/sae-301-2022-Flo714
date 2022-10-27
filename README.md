@@ -4,6 +4,7 @@
 - **Prénom : Florentin**
 - **URL maquette Figma: https://www.figma.com/file/eUs2HvMndTm0Ga4ACsFJg3/Maquette---SAE-301?node-id=2%3A11**
 - **URL publique du site : https://tiktak.flo-demortiere.fr/**
+- **URL publique du site (Heroku) : https://sae301-florentin-demortiere.herokuapp.com/**
 - **URL projet Supabase : https://dckxsnlddmfwenmcregg.supabase.co**
   - [X] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
