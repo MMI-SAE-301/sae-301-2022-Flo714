@@ -9,7 +9,8 @@
                  type="form"
                  :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
                  @submit="signIn"
-                 :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir' } }"
+                 :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir duration-500' } }"
+
                  >
                 <div class="my-6"><FormKit name="email" label="Votre Email" type="email" input-class="w-80 bg-blanc focus:outline-none" label-class=" my-6 text-3xl font-bold"/></div>
                 <div class="my-6"><FormKit name="password" label="Mot de passe" type="password" input-class="w-80 bg-blanc focus:outline-none" label-class="my-20 text-3xl font-bold"/></div>
@@ -17,8 +18,7 @@
                     label="S'inscrire"
                     name="nvlUtilisateur"
                     type="checkbox"
-                    v-model="nvlUtilisateur"
-                    class=" p-3 mt-4 text-blanc" />
+                    v-model="nvlUtilisateur"/>
             </FormKit>
             
         </div>
