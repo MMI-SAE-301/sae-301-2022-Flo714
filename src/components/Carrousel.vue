@@ -28,7 +28,7 @@
                     class="block w-full"
                     alt="Sportifs qui portent une montre"/>
                 <h2 class="absolute top-8 left-16 text-blanc text-5xl font-black">Votre montre, votre monde</h2>
-                <p class="absolute top-64 right-24 text-blanc text-3xl font-bold">Personnalisez votre montre à votre goût</p>
+                <p class="absolute top-40 right-24 text-blanc text-3xl font-bold">Personnalisez votre montre à votre goût</p>
             </div>
             <div class="carousel-item float-left w-full">
                 <img src="../assets/Carrousel_2.jpg"
