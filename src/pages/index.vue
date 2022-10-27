@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="my-3 mb-20 ml-4 flex justify-center ">
-            <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir dur" to="/montre/new">
+            <RouterLink class="my-6 bg-rouge py-6 px-12 text-blanc rounded-full duration-500 hover:bg-noir hover:dark:text-noir hover:dark:bg-blanc" to="/montre/new">
                 <p class="text-3xl font-inter font-bold text-center">Personnaliser<br />
                      ma montre</p></RouterLink>
         </div>
