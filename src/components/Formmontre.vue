@@ -111,7 +111,7 @@
             <div class="font-bold text-xl my-4">
                 <p class="my-8 dark:text-blanc">Matériaux du bracelets</p>
                 <RadioGroup v-model="montre.id_materiaux" class="mx-4">
-                    <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
+                    <RadioGroupLabel class="sr-only ">Choix des matériaux</RadioGroupLabel>
                         <div class="flex gap-10 ">
                             <RadioGroupOption class=""
                                 as="template"
