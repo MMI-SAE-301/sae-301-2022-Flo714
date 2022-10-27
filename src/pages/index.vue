@@ -1,5 +1,6 @@
 <template>
     <div >
+        <span class="sr-only">Carrousel d'image de sportifs portant des images</span>
         <Carrousel />
     </div>
     <div>
