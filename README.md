@@ -3,7 +3,7 @@
 - **Nom : Demortiere** 
 - **Prénom : Florentin**
 - **URL maquette Figma: https://www.figma.com/file/eUs2HvMndTm0Ga4ACsFJg3/Maquette---SAE-301?node-id=2%3A11**
-- **URL publique du site :**
+- **URL publique du site : https://tiktak.flo-demortiere.fr/**
 - **URL projet Supabase : https://dckxsnlddmfwenmcregg.supabase.co**
   - [X] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
@@ -47,8 +47,9 @@ Noté sur 40.
   - liens
   - [X] Mise en page fluide
 - [ ] Mobile First (0-1-2pts)
-  - [] Plusieurs tailles
-    - Lesquelles...
+  - [X] Plusieurs tailles
+    - PC
+    - Tablette grand écran
 - [X] Dark Mode (0-1-2pts)
   - [X] Simple usage de 'dark:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
