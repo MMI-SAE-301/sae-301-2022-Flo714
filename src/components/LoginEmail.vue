@@ -15,12 +15,12 @@
                  >
                 <div class="my-6"><FormKit name="email" label="Votre Email" type="email" input-class="w-80 bg-blanc focus:outline-none" label-class=" my-6 text-3xl font-bold dark:text-blanc"/></div>
                 <div class="my-6"><FormKit name="password" label="Mot de passe" type="password" input-class="w-80 bg-blanc focus:outline-none " label-class="my-20 text-3xl font-bold dark:text-blanc"/></div>
-                <FormKit
+                <div class=""><FormKit
                     label="S'inscrire"
-                    label-class="dark:text-blanc"
+                    label-class="dark:text-blanc "
                     name="nvlUtilisateur"
                     type="checkbox"
-                    v-model="nvlUtilisateur"/>
+                    v-model="nvlUtilisateur"/></div>
             </FormKit>
             
         </div>
