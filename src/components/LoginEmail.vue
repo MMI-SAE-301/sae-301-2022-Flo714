@@ -1,7 +1,7 @@
 <template>
     <div class="bg-blanc font-inter font-bold text-noir dark:bg-noir">
         <div class="p-8 flex justify-center">
-            <button v-if="user" class="dark:text-blanc" @pointerdown="supabase.auth.signOut()">
+            <button v-if="user" class="px-6 py-3 text-xl bg-rouge text-blanc rounded-lg dark:text-blanc duration-500 hover:dark:text-noir hover:dark:bg-blanc" @pointerdown="supabase.auth.signOut()">
              Se déconnecter ({{ user.email }})
             </button>
             <FormKit
