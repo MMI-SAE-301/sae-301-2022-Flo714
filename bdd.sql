@@ -68,6 +68,11 @@ FOR INSERT
 TO authenticated 
 WITH CHECK (true);
 
+CREATE POLICY "Enable delete for users based on user_id" ON "public"."montre"
+AS PERMISSIVE FOR DELETE
+TO public
+USING (auth.uid() = id_utilisateurs )
+
 
 -- drop policy "Les gens peuvent modifier" ON public.montre
 
