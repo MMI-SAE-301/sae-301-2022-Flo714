@@ -48,15 +48,15 @@
         </div>
     </div>
     <div class="mx-10 mt-24 mb-40">
-        <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10 pb-24">
-            <h2 class="text-4xl pt-10 pb-24 font-bold">TiK•TaK, une fabrication Française</h2>
+        <div class="bg-bleu text-blanc ml-10 mr-96 pl-10 rounded-xl pt-10 pb-6">
+            <h2 class="text-3xl pt-10 pb-6 font-bold">TiK•TaK, une fabrication Française</h2>
             <div class="py-10">
-                <p class="text-2xl pr-[50%] py-5 pl-5">TiK•TaK est une marque 100 % Française. L’usine d’assemblage se situe à Germagny, dans le département de Saône et Loire. Tous nos produits sont assemblés ici pour permettre une plus grande facilité de livraison de la marchandise.</p>
-                <p class="text-2xl pr-[50%] py-5 pl-5">De plus, nous livrons seulement la France et les frontaliers. Vous pourrez ainsi montrer lors d’entraînement ou de compétitions internationale que TiK•TaK est la meilleur montre du marché</p>
+                <p class="text-xl pr-[35%] py-5 pl-5">TiK•TaK est une marque 100 % Française. L’usine d’assemblage se situe à Germagny, dans le département de Saône et Loire. Tous nos produits sont assemblés ici pour permettre une plus grande facilité de livraison de la marchandise.</p>
+                <p class="text-xl pr-[35%] py-5 pl-5">De plus, nous livrons seulement la France et les frontaliers. Vous pourrez ainsi montrer lors d’entraînement ou de compétitions internationale que TiK•TaK est la meilleur montre du marché</p>
             </div>
         </div>
-        <div class="flex justify-end -mt-[50vh] mr-40">
-            <img class="w-[50%] rounded-xl" src="../assets/Tik Tak_fr.jpg" alt="Pratiquer du Sport">
+        <div class="flex justify-end -mt-[50vh] mr-20">
+            <img class="w-[45%] rounded-xl" src="../assets/Tik Tak_fr.jpg" alt="Pratiquer du Sport">
         </div>
     </div>
 </template>
