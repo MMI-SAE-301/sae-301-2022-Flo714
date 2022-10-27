@@ -86,23 +86,23 @@
     <div class="p-2 my-4 flex justify-center gap-56 font-inter">
         <div class="w-1/5">
             <montreSvg class="my-20" v-bind="montre"/>
-            <h2 class="text-2xl font-bold border-b-2 border-rouge w-1/4 pb-2">Prix</h2>
+            <h2 class="text-2xl font-bold border-b-2 border-rouge w-1/4 pb-2 dark:text-blanc">Prix</h2>
             <div class="flex items-center gap-4">
-                <p class="text-4xl font-black py-4">349.99 €</p>
-                <p class="text-lg py-4 line-through"> au lieu 499.99 €</p>
+                <p class="text-4xl font-black py-4 dark:text-blanc">349.99 €</p>
+                <p class="text-lg py-4 line-through dark:text-blanc"> au lieu 499.99 €</p>
             </div>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
-            <div class="font-bold text-xl my-4">
+            <div class="font-bold text-xl my-4 dark:text-blanc">
                 <FormKitListColors  name="bracelet_montre" label="Bracelet" />
             </div>
-            <div class="font-bold text-xl my-4">
+            <div class="font-bold text-xl my-4 dark:text-blanc">
                 <FormKitListColors name="boitier_montre" label="Boitier" />
             </div>
-            <div class="font-bold text-xl my-4">
+            <div class="font-bold text-xl my-4 dark:text-blanc">
                 <FormKitListColors name="ecran_montre" label="Écran" class=""/>
             </div> 
-            <div class="font-bold text-xl my-4">
+            <div class="font-bold text-xl my-4 dark:text-blanc">
                 <FormKitListColors name="boutons_montre" label="Boutons" />
             </div>
             <div class="font-bold text-xl my-4">
