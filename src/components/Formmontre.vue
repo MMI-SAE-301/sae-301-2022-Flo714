@@ -80,6 +80,9 @@
 </script>  
 
 <template>
+    <div>
+        <p class="text-3xl mt-16 mb-6 mx-20 font-bold">Vente flash pendant seulement 24 H !</p>
+    </div>
     <div class="p-2 my-4 flex justify-center gap-56 font-inter">
         <div class="w-1/5">
             <montreSvg class="my-20" v-bind="montre"/>
