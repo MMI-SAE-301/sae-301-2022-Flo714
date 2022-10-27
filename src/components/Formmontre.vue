@@ -155,7 +155,7 @@
                   type="button"
                   v-if="Suprmontre.id_montre"
                   @click="($refs.dialogSupprimer as any).showModal()"
-                  class="justify-self-end rounded-md text-blanc bg-noir hover:bg-rouge p-2 shadow-sm">
+                  class="justify-self-end rounded-md text-blanc bg-noir hover:bg-rouge p-2 shadow-sm dark:bg-blanc dark:text-noir hover:dark:text-blanc duration-500">
                   Supprimer ma montre
                 </button>
                 <dialog
