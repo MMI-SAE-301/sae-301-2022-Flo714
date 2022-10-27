@@ -43,7 +43,8 @@ Noté sur 40.
   - liens
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
-    - ...
+    - Grilles
+    - Flex
   - liens
   - [X] Mise en page fluide
 - [ ] Mobile First (0-1-2pts)
