@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blanc font-inter font-bold text-noir">
+    <div class="bg-blanc font-inter font-bold text-noir dark:bg-noir">
         <div class="p-8 flex justify-center">
             <button v-if="user" @pointerdown="supabase.auth.signOut()">
              Se déconnecter ({{ user.email }})
@@ -9,7 +9,7 @@
                  type="form"
                  :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
                  @submit="signIn"
-                 :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir duration-500' } }"
+                 :submit-attrs="{ classes: { input: 'bg-rouge text-blanc text-3xl px-6 py-4 rounded-lg hover:bg-noir duration-500 hover:dark:text-noir hover:dark:bg-blanc' } }"
 
                  >
                 <div class="my-6"><FormKit name="email" label="Votre Email" type="email" input-class="w-80 bg-blanc focus:outline-none" label-class=" my-6 text-3xl font-bold"/></div>
