@@ -52,7 +52,7 @@
 <template>
     <div class="p-2 my-4 flex justify-center gap-56">
         <div class="w-1/5">
-            <montreSvg class="" v-bind="montre"/>
+            <montreSvg class="my-20" v-bind="montre"/>
         </div>
         <FormKit type="form" v-model="montre" @submit="upsertmontre" submit-label="Ajouter dans mes models" :submit-attrs="{ classes: { input: 'my-10 bg-rouge py-4 px-6 rounded-full font-bold text-blanc text-xl font-font-inter hover:bg-noir' } }">
             <div class="font-bold text-xl my-4">
