@@ -42,7 +42,7 @@
                     class="block w-full"
                     alt="Exotic Fruits"/>
                 <h2 class="absolute top-16 left-16 text-blanc text-5xl font-black">Découvrez les fonctionnalitées</h2>
-                <p class="absolute top-[480px] left-36 text-blanc text-3xl font-bold">Les diverses fonctionnalitées vous serviront</p>
+                <p class="absolute top-[310px] left-36 text-blanc text-3xl font-bold">Les diverses fonctionnalitées vous serviront</p>
             </div>
         </div>
         <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
