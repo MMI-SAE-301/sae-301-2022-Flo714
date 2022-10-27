@@ -30,7 +30,7 @@ import LoginEmail from "./LoginEmail.vue";
 
         </div>
         <div>
-            <button class="flex items-center gap-6 bg-rouge px-6 py-2 rounded-lg font-inter font-bold text-xl text-blanc hover:bg-noir hover:text-blanc duration-300" @pointerdown="supabase.auth.signIn({provider: 'google'})"><LoginGoogle />
+            <button class="flex items-center gap-6 bg-rouge px-6 py-2 rounded-lg font-inter font-bold text-xl text-blanc hover:bg-noir hover:text-blanc duration-300 hover:dark:text-noir hover:dark:bg-blanc" @pointerdown="supabase.auth.signIn({provider: 'google'})"><LoginGoogle />
             Se connecter avec Google
             </button>
             
