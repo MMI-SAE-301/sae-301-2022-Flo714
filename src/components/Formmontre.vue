@@ -143,7 +143,7 @@
                        class=" pointer-events-none inline-block h-[21px] w-[21px] transform rounded-full shadow-lg transition duration-500 ease-in-out"
                      />
                 </Switch>
-                <p class="font-bold text-xl my-4">Voulez vous commander votre montre</p>
+                <p class="font-bold text-xl my-4">Voulez vous commander votre montre ?</p>
             </div>
             <div class="flex justify-end font-bold mt-4">
                 <button
